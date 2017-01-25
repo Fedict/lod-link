@@ -29,9 +29,6 @@ import be.belgif.link.helpers.QueryHelper;
 import be.belgif.link.helpers.RDFMediaType;
 
 import com.codahale.metrics.annotation.ExceptionMetered;
-import io.dropwizard.jersey.PATCH;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.annotation.security.PermitAll;
 
@@ -46,7 +43,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 import org.eclipse.rdf4j.model.Model;
-import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.vocabulary.DCAT;
 import org.eclipse.rdf4j.repository.Repository;
 
@@ -64,7 +60,7 @@ public class LinkResource  {
 	@GET
 	@ExceptionMetered
 	public Model getById(@QueryParam("url") String url) {
-		return QueryHelper.getBySP(repo, QueryHelper.asGraph(url), null);
+		return QueryHelper.getBySPO(repo, QueryHelper.asURI(url), null, null);
 	}
 	
 	@PermitAll
@@ -103,7 +99,7 @@ public class LinkResource  {
 	@Path("/_filter")
 	@ExceptionMetered
 	public Model searchBy(@QueryParam("theme") String uri) {
-		return QueryHelper.getBySP(repo, DCAT.THEME, QueryHelper.asURI(uri));
+		return QueryHelper.getBySPO(repo, null, DCAT.THEME, QueryHelper.asURI(uri));
 	}
 
 	/**

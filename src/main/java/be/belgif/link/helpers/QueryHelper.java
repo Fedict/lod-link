@@ -137,13 +137,17 @@ public class QueryHelper {
 	 * @param repo RDF store
 	 * @param subj subject IRI or null
 	 * @param pred predicate IRI or null
+	 * @param obj object IRI, Literal or null 
 	 * @return all triples
 	 */
-	public static Model getBySP(Repository repo, IRI subj, IRI pred) {
+	public static Model getBySPO(Repository repo, IRI subj, IRI pred, Value obj) {
 		Model m = new LinkedHashModel();
+	System.err.println(subj);
+	System.err.println(pred);
+	System.err.println(obj);
 	
 		try (RepositoryConnection conn = repo.getConnection()) {
-			Iterations.addAll(conn.getStatements(subj, pred, null), m);
+			Iterations.addAll(conn.getStatements(subj, pred, obj), m);
 		} catch (RepositoryException e) {
 			throw new WebApplicationException(e);
 		}
