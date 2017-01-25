@@ -30,6 +30,7 @@ import be.belgif.link.auth.UpdateAuth;
 import be.belgif.link.health.RdfStoreHealthCheck;
 import be.belgif.link.helpers.ManagedRepository;
 import be.belgif.link.helpers.RDFMediaType;
+import be.belgif.link.helpers.RDFMessageBodyReader;
 import be.belgif.link.helpers.RDFMessageBodyWriter;
 import be.belgif.link.resources.LinkResource;
 import be.belgif.link.tasks.LuceneReindexTask;
@@ -58,13 +59,6 @@ import org.eclipse.rdf4j.sail.nativerdf.NativeStore;
 public class App extends Application<AppConfig> {
 	public final static String PREFIX_GRAPH = "http://link.belgif.be/graph/";
 
-	public final static Map<String,MediaType> FTYPES = new HashMap<>();
-	static {
-		FTYPES.put("ttl", MediaType.valueOf(RDFMediaType.TTL));
-		FTYPES.put("jsonld", MediaType.valueOf(RDFMediaType.JSONLD));
-		FTYPES.put("nt", MediaType.valueOf(RDFMediaType.NTRIPLES));
-	}
-	
 	/**
 	 * Configure a triple store repository
 	 * 
@@ -105,6 +99,7 @@ public class App extends Application<AppConfig> {
 		env.lifecycle().manage(new ManagedRepository(repo));
 		
 		// RDF Serialization formats
+		env.jersey().register(new RDFMessageBodyReader());
 		env.jersey().register(new RDFMessageBodyWriter());
 		
 		// Resources / "web pages"
