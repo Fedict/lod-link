@@ -62,6 +62,14 @@ public class QueryHelper {
 		" WHERE { ?s search:matches [ search:query ?query ] . " +
 				" ?s rdfs:label|dcterms:title ?o } ";
 
+	private final static String Q_PROP =
+		"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " + "\n" +
+		"PREFIX dcterms: <http://purl.org/dc/terms/> " + "\n" +	
+		"CONSTRUCT { ?s rdfs:label ?o } " +
+		" WHERE { ?s rdfs:label|dcterms:title ?o . " +
+				" ?s ?pred ?val } "; 
+
+			
 	/**
 	 * Get string as URI
 	 * 
@@ -134,18 +142,14 @@ public class QueryHelper {
 	 * 
 	 * @param repo RDF store
 	 * @param subj subject IRI or null
-	 * @param pred predicate IRI or null
-	 * @param obj object IRI, Literal or null 
+
 	 * @return all triples
 	 */
-	public static Model getBySPO(Repository repo, IRI subj, IRI pred, Value obj) {
+	public static Model getBySubj(Repository repo, IRI subj) {
 		Model m = new LinkedHashModel();
-	System.err.println(subj);
-	System.err.println(pred);
-	System.err.println(obj);
 	
 		try (RepositoryConnection conn = repo.getConnection()) {
-			Iterations.addAll(conn.getStatements(subj, pred, obj), m);
+			Iterations.addAll(conn.getStatements(subj, null, null), m);
 		} catch (RepositoryException e) {
 			throw new WebApplicationException(e);
 		}
@@ -182,6 +186,23 @@ public class QueryHelper {
 		String qry = Q_FTS;
 		Map<String,Value> map = new HashMap();
 		map.put("query", asLiteral(text + "*"));
+		return QueryHelper.query(repo, qry, map);
+	}
+	
+	
+	/**
+	 * Get URI and RDFS label for triples having a specific property
+	 * 
+	 * @param repo repository
+	 * @param pred predicate URI
+	 * @param val object value
+	 * @return 
+	 */
+	public static Model getLabelByPred(Repository repo, IRI pred, Value val) {
+		String qry = Q_PROP;
+		Map<String,Value> map = new HashMap();
+		map.put("pred", pred);
+		map.put("val", val);
 		return QueryHelper.query(repo, qry, map);
 	}
 	

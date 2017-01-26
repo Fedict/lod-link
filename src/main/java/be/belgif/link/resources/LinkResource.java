@@ -56,13 +56,25 @@ import org.eclipse.rdf4j.repository.Repository;
 @Produces({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
 public class LinkResource  {
 	private final Repository repo;
-		
+	
+	/**
+	 * Get all triples for a subject
+	 * 
+	 * @param url URI of the subject
+	 * @return HTTP OK
+	 */
 	@GET
 	@ExceptionMetered
 	public Model getById(@QueryParam("url") String url) {
-		return QueryHelper.getBySPO(repo, QueryHelper.asURI(url), null, null);
+		return QueryHelper.getBySubj(repo, QueryHelper.asURI(url));
 	}
 	
+	/**
+	 * Add statements to the store
+	 * 
+	 * @param m
+	 * @return HTTP OK when done 
+	 */
 	@PermitAll
 	@PUT
 	@Consumes({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
@@ -72,6 +84,12 @@ public class LinkResource  {
 		return Response.ok().build();
 	}
 	
+	/**
+	 * Delete all statements for a given subject
+	 * 
+	 * @param url subject URI
+	 * @return HTTP OK when done
+	 */
 	@PermitAll
 	@DELETE
 	@ExceptionMetered
@@ -80,6 +98,11 @@ public class LinkResource  {
 		return Response.ok().build();
 	}
 
+	/**
+	 * Lucene re-index
+	 * 
+	 * @return HTTP OK when done
+	 */
 	@PermitAll
 	@POST
 	@Path("/_reindex")
@@ -88,18 +111,30 @@ public class LinkResource  {
 		return Response.ok().build();
 	}
 	
+	/**
+	 * Full text search
+	 * 
+	 * @param text
+	 * @return triples
+	 */
 	@GET
 	@Path("/_search")
 	@ExceptionMetered
-	public Model searchLink(@QueryParam("q") String uri) {
-		return QueryHelper.getFTS(repo, uri);
+	public Model searchLink(@QueryParam("q") String text) {
+		return QueryHelper.getFTS(repo, text);
 	}
 
+	/**
+	 * Search by dcat:theme
+	 * 
+	 * @param uri theme uri
+	 * @return triples
+	 */
 	@GET
 	@Path("/_filter")
 	@ExceptionMetered
 	public Model searchBy(@QueryParam("theme") String uri) {
-		return QueryHelper.getBySPO(repo, null, DCAT.THEME, QueryHelper.asURI(uri));
+		return QueryHelper.getLabelByPred(repo, DCAT.THEME, QueryHelper.asURI(uri));
 	}
 
 	/**
