@@ -47,7 +47,7 @@ Note: the value of the `url` parameter should be URL-encoded.
 ## Filtering link(s) (GET)
 
 ```
-http://link.belgif.be/link/_filter?theme=http://publications.europa.eu/resource/authority/data-theme/TECH (al technology-related links)
+http://link.belgif.be/link/_filter?theme=http://publications.europa.eu/resource/authority/data-theme/TECH (all technology-related links)
 ```
 
 ## Adding information about a link (PUT)
