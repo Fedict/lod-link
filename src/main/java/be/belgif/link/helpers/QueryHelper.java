@@ -9,7 +9,6 @@ import be.belgif.link.App;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 
 import javax.ws.rs.WebApplicationException;
 
@@ -61,8 +60,7 @@ public class QueryHelper {
 		"PREFIX dcterms: <http://purl.org/dc/terms/> " + "\n" +	
 		"CONSTRUCT { ?s rdfs:label ?o } " +
 		" WHERE { ?s search:matches [ search:query ?query ] . " +
-				" ?s rdfs:label|dcterms:title ?o } " +
-		"}";
+				" ?s rdfs:label|dcterms:title ?o } ";
 
 	/**
 	 * Get string as URI
