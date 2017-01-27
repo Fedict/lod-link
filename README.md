@@ -1,6 +1,7 @@
-# Link store
+# Demo link store
 
-This is an example implementation for store links (and metadata) into the triple store.
+This is an example implementation for storing links (and metadata) into a triple store.
+
 
 ## Format / structure
 
@@ -50,6 +51,11 @@ Note: the value of the `url` parameter should be URL-encoded.
 http://link.belgif.be/link/_filter?theme=http://publications.europa.eu/resource/authority/data-theme/TECH (all technology-related links)
 ```
 
+Note again that, especially when the ID contains a '#' (which is not passed to the server), URL-encoding might be necessary.
+```
+http://link.belgif.be/link/_filter?theme=http://vocab.belgif.be/be-theme/WORK%23id
+```
+
 ## Adding information about a link (PUT)
 
 This requires HTTP basic authentication (i.e. a username and password)
@@ -60,17 +66,14 @@ file can be uploaded using curl (or any other HTTP-tool) using the following com
 curl -v -T test.ttl -H "Content-Type: text/turtle" --basic http://user:pass@link.belgif.be/link
 ```
 
-## Updating full text search index
-
-The (Lucene) full text search index is not updated automatically,
-one has to update the FTS after one or more PUTs.
+## Reindexing full text search index (POST)
 
 This requires HTTP basic authentication (i.e. a username and password)
 
-Assuming the username is `user` and the password `pass`, the index can be incrementally 
-updated using curl (or any other HTTP-tool) using the following command: 
+Assuming the username is `user` and the password `pass`, the Lucene index can be reindexed 
+with curl (or any other HTTP-tool) using the following command: 
 ```
-curl -v --request PATCH --basic http://user:pass@link.belgif.be/link/_reindex
+curl -v --request POST http://user:pass@link.belgif.be/link/_reindex
 ```
 
 ## Removing a link (DELETE)
