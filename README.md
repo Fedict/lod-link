@@ -66,16 +66,6 @@ file can be uploaded using curl (or any other HTTP-tool) using the following com
 curl -v -T test.ttl -H "Content-Type: text/turtle" --basic http://user:pass@link.belgif.be/link
 ```
 
-## Reindexing full text search index (POST)
-
-This requires HTTP basic authentication (i.e. a username and password)
-
-Assuming the username is `user` and the password `pass`, the Lucene index can be reindexed 
-with curl (or any other HTTP-tool) using the following command: 
-```
-curl -v --request POST http://user:pass@link.belgif.be/link/_reindex
-```
-
 ## Removing a link (DELETE)
 
 This requires HTTP basic authentication (i.e. a username and password)
@@ -88,3 +78,36 @@ curl --request DELETE -v http://user:pass@link.belgif.be/link?url=http://www.fed
 ```
 Note: the value of the `url` parameter must be URL-encoded.
 
+
+## Reindexing full text search index (POST)
+
+This requires HTTP basic authentication (i.e. a username and password)
+
+Assuming the username is `user` and the password `pass`, the Lucene index can be reindexed 
+with curl (or any other HTTP-tool) using the following command: 
+```
+curl -v --request POST http://user:pass@link.belgif.be/_reindex
+```
+
+## Linked Data Fragments / Triple Pattern Fragments endpoint
+```
+http://link.belgif.be/_ldf
+```
+
+## Exporting data to an RDF file
+
+This requires access to the admin port 8081
+Data will be exported to the export directory.
+```
+curl -v --request POST http://local_ip_address:8081/tasks/rdf-export?file=export.nt
+```
+
+
+## Importing data from an RDF file
+
+This requires access to the admin port 8081
+Data will be exported to the import directory.
+
+```
+curl -v --request POST http://local_ip_address:8081/tasks/rdf-import?file=import.nt
+```

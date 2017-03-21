@@ -126,7 +126,7 @@ public class RDFImportTask extends Task {
 	 * @param inDir import directory
 	 */
 	public RDFImportTask(Repository repo, String inDir) {
-		super("vocab-import");
+		super("rdf-import");
 		this.repo = repo;
 		this.importDir = inDir;
 	}
