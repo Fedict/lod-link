@@ -23,48 +23,64 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-package be.belgif.link.helpers;
+package be.belgif.link.resources;
 
-import javax.ws.rs.core.MediaType;
-import org.eclipse.rdf4j.rio.RDFFormat;
+import be.belgif.link.helpers.QueryHelper;
+
+import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.repository.Repository;
 
 /**
- * Helper class for RDF serialization types
+ * Abstract resource querying the RDF triple store.
  *
  * @author Bart.Hanssens
  */
-public class RDFMediaType {
+public abstract class RdfResource {
 
-	// can't use RDFFormat.xyz.toString(): not constant
-	public final static String JSONLD = "application/ld+json";
-	public final static String NTRIPLES = "application/n-triples";
-	public final static String TRIG = "application/trig";
-	public final static String TTL = "text/turtle";
+	private final Repository repo;
 
 	/**
-	 * Get RDF Format from mediatype
+	 * Get repository
 	 *
-	 * @param mt Jersey media type
-	 * @return RDF4J rdf format
+	 * @return repository
 	 */
-	public static RDFFormat getRDFFormat(MediaType mt) {
-		RDFFormat fmt;
+	protected Repository getRepository() {
+		return repo;
+	}
 
-		// check for content type, ignoring the charset
-		switch (mt.getType() + "/" + mt.getSubtype()) {
-			case RDFMediaType.NTRIPLES:
-				fmt = RDFFormat.NTRIPLES;
-				break;
-			case RDFMediaType.TTL:
-				fmt = RDFFormat.TURTLE;
-				break;
-			case RDFMediaType.TRIG:
-				fmt = RDFFormat.TRIG;
-				break;
-			default:
-				fmt = RDFFormat.JSONLD;
-				break;
-		}
-		return fmt;
+	/**
+	 * Get by ID (URI)
+	 *
+	 * @param prefix
+	 * @param type
+	 * @param id
+	 * @return RDF model
+	 */
+/*	protected Model getById(String prefix, String type, String id) {
+		String url = (!id.isEmpty()) ? prefix + type + "/" + id + "#id"
+				: prefix + type + "#id";
+		System.err.println(url);
+		return QueryHelper.get(repo, QueryHelper.asURI(url), type);
+	}
+*/
+	/**
+	 * Get all triples
+	 *
+	 * @param subj subject IRI or null
+	 * @param from named graph
+	 * @return all triples in a graph
+	 */
+/*	public Model get(IRI subj, String from) {
+		return QueryHelper.get(repo, subj, from);
+	}
+*/
+	/**
+	 * Constructor
+	 *
+	 * @param repo
+	 */
+	public RdfResource(Repository repo) {
+		this.repo = repo;
 	}
 }

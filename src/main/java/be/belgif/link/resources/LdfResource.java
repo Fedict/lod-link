@@ -23,48 +23,55 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-package be.belgif.link.helpers;
+package be.belgif.link.resources;
 
-import javax.ws.rs.core.MediaType;
-import org.eclipse.rdf4j.rio.RDFFormat;
+import be.belgif.link.helpers.RDFMediaType;
+import be.belgif.link.ldf.QueryHelperLDF;
+
+import com.codahale.metrics.annotation.ExceptionMetered;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.repository.Repository;
 
 /**
- * Helper class for RDF serialization types
+ * Linked Data Fragments search.
  *
  * @author Bart.Hanssens
  */
-public class RDFMediaType {
+@Path("/_ldf")
+public class LdfResource extends RdfResource {
 
-	// can't use RDFFormat.xyz.toString(): not constant
-	public final static String JSONLD = "application/ld+json";
-	public final static String NTRIPLES = "application/n-triples";
-	public final static String TRIG = "application/trig";
-	public final static String TTL = "text/turtle";
+	@GET
+	@Produces({RDFMediaType.TRIG, RDFMediaType.JSONLD})
+	@ExceptionMetered
+	public Model searchAll(@QueryParam("s") String s,
+			@QueryParam("p") String p, @QueryParam("o") String o,
+			@QueryParam("page") String page) {
+		return QueryHelperLDF.getLDF(getRepository(), s, p, o, "", page);
+	}
+
+	@GET
+	@Path("{vocab}")
+	@Produces({RDFMediaType.TRIG, RDFMediaType.JSONLD})
+	@ExceptionMetered
+	public Model searchVocab(@PathParam("vocab") String vocab, @QueryParam("s") String s,
+			@QueryParam("p") String p, @QueryParam("o") String o,
+			@QueryParam("page") String page) {
+		return QueryHelperLDF.getLDF(getRepository(), s, p, o, vocab, page);
+	}
 
 	/**
-	 * Get RDF Format from mediatype
+	 * Constructor
 	 *
-	 * @param mt Jersey media type
-	 * @return RDF4J rdf format
+	 * @param repo RDF triple store
 	 */
-	public static RDFFormat getRDFFormat(MediaType mt) {
-		RDFFormat fmt;
-
-		// check for content type, ignoring the charset
-		switch (mt.getType() + "/" + mt.getSubtype()) {
-			case RDFMediaType.NTRIPLES:
-				fmt = RDFFormat.NTRIPLES;
-				break;
-			case RDFMediaType.TTL:
-				fmt = RDFFormat.TURTLE;
-				break;
-			case RDFMediaType.TRIG:
-				fmt = RDFFormat.TRIG;
-				break;
-			default:
-				fmt = RDFFormat.JSONLD;
-				break;
-		}
-		return fmt;
+	public LdfResource(Repository repo) {
+		super(repo);
 	}
 }

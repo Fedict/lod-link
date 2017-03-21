@@ -30,30 +30,36 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;
 import org.hibernate.validator.constraints.NotEmpty;
 
-
 /**
  *
  * @author Bart.Hanssens
  */
-public class AppConfig extends Configuration{
+public class AppConfig extends Configuration {
+
 	@NotEmpty
 	private String dataDir;
-	
+
 	@NotEmpty
 	private String luceneDir;
-	
+
 	@NotEmpty
 	private String username;
-	
+
 	@NotEmpty
 	private String password;
 	
+	@NotEmpty
+	private String importDir;
 	
+	@NotEmpty
+	private String exportDir;
+	
+
 	@JsonProperty
 	public String getDataDir() {
 		return dataDir;
 	}
-	
+
 	@JsonProperty
 	public void setDataDir(String dataDir) {
 		this.dataDir = dataDir;
@@ -63,17 +69,37 @@ public class AppConfig extends Configuration{
 	public String getLuceneDir() {
 		return luceneDir;
 	}
-	
+
 	@JsonProperty
 	public void setLuceneDir(String luceneDir) {
 		this.luceneDir = luceneDir;
 	}
-	
+
+	@JsonProperty
+	public String getImportDir() {
+		return importDir;
+	}
+
+	@JsonProperty
+	public void setImportDir(String importDir) {
+		this.importDir = importDir;
+	}
+
+	@JsonProperty
+	public String getExportDir() {
+		return exportDir;
+	}
+
+	@JsonProperty
+	public void setExportDir(String exportDir) {
+		this.exportDir = exportDir;
+	}
+
 	@JsonProperty
 	public String getUsername() {
 		return username;
 	}
-	
+
 	@JsonProperty
 	public void setUsername(String username) {
 		this.username = username;

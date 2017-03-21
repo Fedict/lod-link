@@ -26,79 +26,23 @@
 package be.belgif.link.resources;
 
 import be.belgif.link.helpers.QueryHelper;
-import be.belgif.link.helpers.RDFMediaType;
-
-import com.codahale.metrics.annotation.ExceptionMetered;
 
 import javax.annotation.security.PermitAll;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.DELETE;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.eclipse.rdf4j.model.Model;
-import org.eclipse.rdf4j.model.vocabulary.DCAT;
 import org.eclipse.rdf4j.repository.Repository;
 
 /**
- * Storage for link metadata
+ * Reindex lucene
  * 
  * @author Bart.Hanssens
  */
-
-@Path("/link")
-@Produces({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
-public class LinkResource  {
+public class ReindexResource  {
 	private final Repository repo;
 	
-	/**
-	 * Get all triples for a subject
-	 * 
-	 * @param url URI of the subject
-	 * @return HTTP OK
-	 */
-	@GET
-	@ExceptionMetered
-	public Model getById(@QueryParam("url") String url) {
-		return QueryHelper.getBySubj(repo, QueryHelper.asURI(url));
-	}
-	
-	/**
-	 * Add statements to the store
-	 * 
-	 * @param m
-	 * @return HTTP OK when done 
-	 */
-	@PermitAll
-	@PUT
-	@Consumes({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
-	@ExceptionMetered
-	public Response postLinkdata(Model m) {
-		QueryHelper.putStatements(repo, m);
-		return Response.ok().build();
-	}
-	
-	/**
-	 * Delete all statements for a given subject
-	 * 
-	 * @param url subject URI
-	 * @return HTTP OK when done
-	 */
-	@PermitAll
-	@DELETE
-	@ExceptionMetered
-	public Response deleteLinkdata(@QueryParam("url") String url) {
-		QueryHelper.deleteStatements(repo, url);
-		return Response.ok().build();
-	}
-
 	/**
 	 * Lucene re-index
 	 * 
@@ -113,37 +57,11 @@ public class LinkResource  {
 	}
 	
 	/**
-	 * Full text search
-	 * 
-	 * @param text
-	 * @return triples
-	 */
-	@GET
-	@Path("/_search")
-	@ExceptionMetered
-	public Model searchLink(@QueryParam("q") String text) {
-		return QueryHelper.getFTS(repo, text);
-	}
-	
-	/**
-	 * Search by dcat:theme
-	 * 
-	 * @param uri theme uri
-	 * @return triples
-	 */
-	@GET
-	@Path("/_filter")
-	@ExceptionMetered
-	public Model searchBy(@QueryParam("theme") String uri) {
-		return QueryHelper.getLabelByPred(repo, DCAT.THEME, QueryHelper.asURI(uri));
-	}
-
-	/**
 	 * Constructor
 	 * 
 	 * @param repo 
 	 */
-	public LinkResource(Repository repo) {
+	public ReindexResource(Repository repo) {
 		this.repo = repo;
 	}
 }

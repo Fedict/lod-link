@@ -29,11 +29,14 @@ import be.belgif.link.auth.DummyUser;
 import be.belgif.link.auth.UpdateAuth;
 import be.belgif.link.health.RdfStoreHealthCheck;
 import be.belgif.link.helpers.ManagedRepository;
-import be.belgif.link.helpers.RDFMediaType;
 import be.belgif.link.helpers.RDFMessageBodyReader;
 import be.belgif.link.helpers.RDFMessageBodyWriter;
+import be.belgif.link.resources.LdfResource;
 import be.belgif.link.resources.LinkResource;
+import be.belgif.link.resources.ReindexResource;
 import be.belgif.link.tasks.LuceneReindexTask;
+import be.belgif.link.tasks.RDFExportTask;
+import be.belgif.link.tasks.RDFImportTask;
 
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
@@ -41,9 +44,6 @@ import io.dropwizard.auth.basic.BasicCredentialAuthFilter;
 import io.dropwizard.setup.Environment;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-import javax.ws.rs.core.MediaType;
 
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.sail.SailRepository;
@@ -57,8 +57,27 @@ import org.eclipse.rdf4j.sail.nativerdf.NativeStore;
  * @author Bart.Hanssens
  */
 public class App extends Application<AppConfig> {
-	public final static String PREFIX_GRAPH = "http://link.belgif.be/graph/";
+	private final static String PREFIX = "http://link.belgif.be/";
+	private final static String PREFIX_GRAPH = "http://link.belgif.be/graph/";
 
+	/**
+	 * Get base URI
+	 * 
+	 * @return 
+	 */
+	public static String getPrefix() {
+		return PREFIX;
+	}
+
+	/**
+	 * Get base URI
+	 * 
+	 * @return 
+	 */
+	public static String getGraphPrefix() {
+		return PREFIX_GRAPH;
+	}
+	
 	/**
 	 * Configure a triple store repository
 	 * 
@@ -104,10 +123,14 @@ public class App extends Application<AppConfig> {
 		
 		// Resources / "web pages"
 		env.jersey().register(new LinkResource(repo));
+		env.jersey().register(new LdfResource(repo));
+		env.jersey().register(new ReindexResource(repo));	
 
 		// Tasks
 		env.admin().addTask(new LuceneReindexTask(repo));
-				
+		env.admin().addTask(new RDFImportTask(repo, config.getImportDir()));
+		env.admin().addTask(new RDFExportTask(repo, config.getExportDir()));
+		
 		// Monitoring
 		RdfStoreHealthCheck check = new RdfStoreHealthCheck(repo);
 		env.healthChecks().register("triplestore", check);
