@@ -48,6 +48,7 @@ import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.RDFS;
 import org.eclipse.rdf4j.model.vocabulary.SKOS;
 import org.eclipse.rdf4j.model.vocabulary.VOID;
+import org.eclipse.rdf4j.model.vocabulary.XMLSchema;
 
 import org.eclipse.rdf4j.query.GraphQuery;
 import org.eclipse.rdf4j.query.MalformedQueryException;
@@ -145,6 +146,7 @@ public class QueryHelper {
 			m.setNamespace(RDFS.PREFIX, RDFS.NAMESPACE);
 			m.setNamespace(SKOS.PREFIX, SKOS.NAMESPACE);
 			m.setNamespace(VOID.PREFIX, VOID.NAMESPACE);
+			m.setNamespace(XMLSchema.PREFIX, XMLSchema.NAMESPACE);
 		}
 		return m;
 	}

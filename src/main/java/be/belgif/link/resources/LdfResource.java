@@ -53,7 +53,7 @@ public class LdfResource extends RdfResource {
 	public Model searchAll(@QueryParam("s") String s,
 			@QueryParam("p") String p, @QueryParam("o") String o,
 			@QueryParam("page") String page) {
-		return QueryHelperLDF.getLDF(getRepository(), s, p, o, "", page);
+		return QueryHelperLDF.getLDF(getRepository(), s, p, o, page);
 	}
 
 	/**

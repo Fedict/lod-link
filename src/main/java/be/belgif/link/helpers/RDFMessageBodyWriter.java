@@ -25,6 +25,9 @@
  */
 package be.belgif.link.helpers;
 
+import be.belgif.link.ldf.Hydra;
+import com.google.common.net.HttpHeaders;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.annotation.Annotation;
@@ -67,7 +70,7 @@ public class RDFMessageBodyWriter implements MessageBodyWriter<Model> {
 
 	@Override
 	public void writeTo(Model m, Class<?> type, Type generic, Annotation[] antns, MediaType mt,
-			MultivaluedMap<String, Object> mm, OutputStream out)
+			MultivaluedMap<String, Object> headers, OutputStream out)
 			throws IOException, WebApplicationException {
 		if (m.isEmpty()) {
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
@@ -76,6 +79,9 @@ public class RDFMessageBodyWriter implements MessageBodyWriter<Model> {
 		RDFFormat fmt = RDFMediaType.getRDFFormat(mt);
 
 		try {
+			if (m.contains(null, Hydra.MAPPING, null)) {
+				headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "*");
+			}
 			Rio.write(m, out, fmt);
 		} catch (RDFHandlerException ex) {
 			throw new WebApplicationException(ex);

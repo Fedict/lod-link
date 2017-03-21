@@ -92,22 +92,11 @@ public class QueryHelperLDF {
 		"SELECT (COUNT(*) AS ?cnt) " + 
 		"WHERE { ?s ?p ?o } ";
 	
-	private final static String Q_COUNT_GRAPH =
-		"SELECT (COUNT(*) AS ?cnt) " + 
-		"WHERE { GRAPH ?graph { ?s ?p ?o } } ";
-	
 	private final static String Q_LDF = 
 		"CONSTRUCT { ?s ?p ?o } " +
 		"WHERE { ?s ?p ?o } " +
 		//"ORDER BY ?s ?p ?o " +
 		"LIMIT " + PAGING;
-	
-	private final static String Q_LDF_GRAPH = 
-		"CONSTRUCT { ?s ?p ?o } " +
-		"WHERE { GRAPH ?graph { ?s ?p ?o } } " +
-		//"ORDER BY ?s ?p ?o " +
-		"LIMIT " + PAGING;
-	
 	
 	/**
 	 * Convert string into IRI or null
@@ -181,12 +170,11 @@ public class QueryHelperLDF {
 	 * @param vocab name of the vocabulary
 	 * @param dataset dataset IRI
 	 */
-	private static void template(Model m, IRI graph, String vocab, IRI dataset) {
-		String path = vocab.isEmpty() ? "" : "/" + vocab;
+	private static void template(Model m, IRI graph, IRI dataset) {
 		// search template
 		m.add(dataset, Hydra.SEARCH, LDF_SEARCH, graph);
 		m.add(LDF_SEARCH, Hydra.TEMPLATE, 
-				F.createLiteral(PREFIX + LDF + path + "{?s,p,o}"), graph);
+				F.createLiteral(PREFIX + LDF + "{?s,p,o}"), graph);
 		m.add(LDF_SEARCH, Hydra.MAPPING, LDF_MAP_S, graph);
 		m.add(LDF_SEARCH, Hydra.MAPPING, LDF_MAP_P, graph);
 		m.add(LDF_SEARCH, Hydra.MAPPING, LDF_MAP_O, graph);
@@ -237,9 +225,9 @@ public class QueryHelperLDF {
 	 * @param count total number of triples
 	 * @param isFrag true if fragment was requested (true if page)
 	 */
-	private static void hyperControls(Model m, String vocab, IRI dataset,
+	private static void hyperControls(Model m, IRI dataset,
 						UriBuilder builder, int offset, int count, boolean isFrag) {
-		IRI graph = QueryHelper.asGraph("/" + vocab + "#hydra");
+		IRI graph = QueryHelper.asGraph("#hydra");
 		IRI fragment = F.createIRI(builder.build().toString());
 	
 		builder.queryParam(PAGE, "{page}");
@@ -251,7 +239,7 @@ public class QueryHelperLDF {
 		m.add(dataset, VOID.SUBSET, fragment, graph);
 		m.add(fragment, VOID.SUBSET, page, graph);
 
-		template(m, graph, vocab, dataset);
+		template(m, graph, dataset);
 		meta(m, graph, isFrag ? fragment : page, count);
 		page(m, graph, isFrag ? fragment : page, current, count, offset, builder); 
 	}
@@ -275,7 +263,7 @@ public class QueryHelperLDF {
 			return;
 		}
 		
-		String qry = (graph != null) ? Q_LDF_GRAPH : Q_LDF;
+		String qry = Q_LDF;
 		GraphQuery gq = conn.prepareGraphQuery(qry  + " OFFSET " + offset);
 		
 		if (subj != null) {
@@ -300,12 +288,10 @@ public class QueryHelperLDF {
 	 * @param subj subject IRI
 	 * @param pred predicate IRI
 	 * @param obj object value
-	 * @param graph named graph
 	 * @return number of results
 	 */
-	private static int getCount(RepositoryConnection conn, 
-									IRI subj, IRI pred, Value obj, IRI graph) {
-		TupleQuery tq = conn.prepareTupleQuery((graph != null) ? Q_COUNT_GRAPH : Q_COUNT);
+	private static int getCount(RepositoryConnection conn, IRI subj, IRI pred, Value obj) {
+		TupleQuery tq = conn.prepareTupleQuery(Q_COUNT);
 		if (subj != null) {
 			tq.setBinding("s", subj);
 		}
@@ -314,9 +300,6 @@ public class QueryHelperLDF {
 		}
 		if (obj != null) {
 			tq.setBinding("o", obj);
-		}
-		if (graph != null) {
-			tq.setBinding("graph", graph);
 		}
 		BindingSet res = QueryResults.singleResult(tq.evaluate());
 		String val = res.getValue("cnt").stringValue();
@@ -342,12 +325,10 @@ public class QueryHelperLDF {
 	 * @param s subject to search for or null
 	 * @param p predicate to search for or null
 	 * @param o object to search for or null
-	 * @param vocab named graph
 	 * @param page page number
 	 * @return RDF model 
 	 */
-	public static Model getLDF(Repository repo, String s, String p, String o, 
-													String vocab, String page) {
+	public static Model getLDF(Repository repo, String s, String p, String o, String page) {
 		boolean isFrag = (page == null || page.isEmpty());
 
 		// check parameters
@@ -361,7 +342,7 @@ public class QueryHelperLDF {
 		Value obj = (o != null) ? createLiteralOrUri(o) : null;
 	
 		
-		UriBuilder builder  = UriBuilder.fromUri(PREFIX).path(LDF).path(vocab);
+		UriBuilder builder  = UriBuilder.fromUri(PREFIX).path(LDF);
 		if (s != null) {
 			builder = builder.queryParam("s", s);
 		}
@@ -375,15 +356,15 @@ public class QueryHelperLDF {
 		int offset = (pageVal - 1) * PAGING;
 		
 		// speedup: vocabularies are stored in separate graphs
-		IRI graph = (!vocab.isEmpty()) ? QueryHelper.asGraph(vocab) : null;
-		IRI dataset = QueryHelper.asDataset(vocab);
+		IRI graph = QueryHelper.asGraph("");
+		IRI dataset = QueryHelper.asDataset("");
 		
 		try (RepositoryConnection conn = repo.getConnection()) {
-			int count = getCount(conn, subj, pred, obj, graph);
+			int count = getCount(conn, subj, pred, obj);
 			
 			Model m = new LinkedHashModel();
 			
-			hyperControls(m, vocab, dataset, builder, offset, count, isFrag);
+			hyperControls(m, dataset, builder, offset, count, isFrag);
 			getFragment(m, conn, subj, pred, obj, graph, offset, count);
 
 			return setNamespaces(m);
