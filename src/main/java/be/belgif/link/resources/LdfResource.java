@@ -56,16 +56,6 @@ public class LdfResource extends RdfResource {
 		return QueryHelperLDF.getLDF(getRepository(), s, p, o, "", page);
 	}
 
-	@GET
-	@Path("{vocab}")
-	@Produces({RDFMediaType.TRIG, RDFMediaType.JSONLD})
-	@ExceptionMetered
-	public Model searchVocab(@PathParam("vocab") String vocab, @QueryParam("s") String s,
-			@QueryParam("p") String p, @QueryParam("o") String o,
-			@QueryParam("page") String page) {
-		return QueryHelperLDF.getLDF(getRepository(), s, p, o, vocab, page);
-	}
-
 	/**
 	 * Constructor
 	 *

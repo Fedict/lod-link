@@ -30,7 +30,6 @@ import java.io.OutputStream;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
-
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
@@ -46,14 +45,16 @@ import org.eclipse.rdf4j.rio.Rio;
 
 /**
  * RDF Writer
- * 
+ *
  * @author Bart.Hanssens
  */
 @Provider
-@Produces({RDFMediaType.JSONLD + ";charset=utf-8", 
-			RDFMediaType.NTRIPLES + ";charset=utf-8", 
-			RDFMediaType.TTL + ";charset=utf-8"})
+@Produces({RDFMediaType.JSONLD + ";charset=utf-8",
+	RDFMediaType.NTRIPLES + ";charset=utf-8",
+	RDFMediaType.TTL + ";charset=utf-8",
+	RDFMediaType.TRIG + ";charset=utf-8"})
 public class RDFMessageBodyWriter implements MessageBodyWriter<Model> {
+
 	@Override
 	public boolean isWriteable(Class<?> type, Type generic, Annotation[] antns, MediaType mt) {
 		return generic == Model.class;
@@ -65,15 +66,15 @@ public class RDFMessageBodyWriter implements MessageBodyWriter<Model> {
 	}
 
 	@Override
-	public void writeTo(Model m, Class<?> type, Type generic, Annotation[] antns, MediaType mt, 
-										MultivaluedMap<String, Object> mm, OutputStream out) 
-									throws IOException, WebApplicationException {
+	public void writeTo(Model m, Class<?> type, Type generic, Annotation[] antns, MediaType mt,
+			MultivaluedMap<String, Object> mm, OutputStream out)
+			throws IOException, WebApplicationException {
 		if (m.isEmpty()) {
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
 		}
-		
+
 		RDFFormat fmt = RDFMediaType.getRDFFormat(mt);
-		
+
 		try {
 			Rio.write(m, out, fmt);
 		} catch (RDFHandlerException ex) {
