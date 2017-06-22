@@ -42,6 +42,10 @@ public class UpdateAuth implements Authenticator<BasicCredentials, DummyUser> {
 	
 	@Override
 	public Optional<DummyUser> authenticate(BasicCredentials c) throws AuthenticationException {
+		// no username / login required
+		if (c.getUsername() == null || c.getUsername().isEmpty()) {
+			return Optional.of(new DummyUser());
+		}
 		if (c.getUsername().equals(username) && c.getPassword().equals(password)) {
 			return Optional.of(new DummyUser());
 		} 

@@ -28,73 +28,35 @@ package be.belgif.link;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.dropwizard.Configuration;
-import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  *
  * @author Bart.Hanssens
  */
 public class AppConfig extends Configuration {
-
-	@NotEmpty
-	private String dataDir;
-
-	@NotEmpty
-	private String luceneDir;
-
-	@NotEmpty
 	private String username;
-
-	@NotEmpty
 	private String password;
+	private String store;
+	private String storeName;
+
+	@JsonProperty
+	public String getStore() {
+		return store;
+	}
+	@JsonProperty
+	public void setStore(String store) {
+		this.store = store ;
+	}
 	
-	@NotEmpty
-	private String importDir;
+	@JsonProperty
+	public String getStoreName() {
+		return storeName;
+	}
+	@JsonProperty
+	public void setStorename(String storeName) {
+		this.storeName = storeName ;
+	}
 	
-	@NotEmpty
-	private String exportDir;
-	
-
-	@JsonProperty
-	public String getDataDir() {
-		return dataDir;
-	}
-
-	@JsonProperty
-	public void setDataDir(String dataDir) {
-		this.dataDir = dataDir;
-	}
-
-	@JsonProperty
-	public String getLuceneDir() {
-		return luceneDir;
-	}
-
-	@JsonProperty
-	public void setLuceneDir(String luceneDir) {
-		this.luceneDir = luceneDir;
-	}
-
-	@JsonProperty
-	public String getImportDir() {
-		return importDir;
-	}
-
-	@JsonProperty
-	public void setImportDir(String importDir) {
-		this.importDir = importDir;
-	}
-
-	@JsonProperty
-	public String getExportDir() {
-		return exportDir;
-	}
-
-	@JsonProperty
-	public void setExportDir(String exportDir) {
-		this.exportDir = exportDir;
-	}
-
 	@JsonProperty
 	public String getUsername() {
 		return username;

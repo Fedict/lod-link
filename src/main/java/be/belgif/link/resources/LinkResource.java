@@ -61,14 +61,21 @@ public class LinkResource  {
 	/**
 	 * Get all triples for a subject
 	 * 
-	 * @param url URI of the subject
+	 * @param url URI of the subject or null
+	 * @param graph graph of the subject or null
 	 * @return HTTP OK
 	 */
 	@GET
-	@ExceptionMetered
-	public Model getById(@QueryParam("url") String url) {
-		return QueryHelper.getBySubj(repo, QueryHelper.asURI(url));
+	public Model getById(@QueryParam("s") String url, @QueryParam("g") String graph) {	
+		if (graph != null && !graph.isEmpty()) {
+			return QueryHelper.get(repo, null, QueryHelper.asURI(graph));
+		}
+		if (url != null && !url.isEmpty()) {
+			return QueryHelper.get(repo, QueryHelper.asURI(url), null);
+		}
+		return null;
 	}
+	
 	
 	/**
 	 * Add statements to the store
@@ -80,38 +87,31 @@ public class LinkResource  {
 	@PUT
 	@Consumes({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
 	@ExceptionMetered
-	public Response postLinkdata(Model m) {
-		QueryHelper.putStatements(repo, m);
+	public Response putModel(Model m) {
+		QueryHelper.add(repo, m);
 		return Response.ok().build();
 	}
 	
 	/**
-	 * Delete all statements for a given subject
+	 * Delete all statements for a given subject or graph
 	 * 
-	 * @param url subject URI
+	 * @param url subject URI or null
+	 * @param graph graph URI or null
 	 * @return HTTP OK when done
 	 */
 	@PermitAll
 	@DELETE
 	@ExceptionMetered
-	public Response deleteLinkdata(@QueryParam("url") String url) {
-		QueryHelper.deleteStatements(repo, url);
+	public Response delete(@QueryParam("s") String url, @QueryParam("g") String graph) {
+		if (graph != null && !graph.isEmpty()) {
+			QueryHelper.delete(repo, null, QueryHelper.asURI(graph));
+		}
+		if (url != null && !url.isEmpty()) {
+			QueryHelper.delete(repo, QueryHelper.asURI(url), null);
+		}
 		return Response.ok().build();
 	}
 
-	/**
-	 * Lucene re-index
-	 * 
-	 * @return HTTP OK when done
-	 */
-	@PermitAll
-	@POST
-	@Path("/_reindex")
-	public Response reIndex() {
-		QueryHelper.reIndex(repo);
-		return Response.ok().build();
-	}
-	
 	/**
 	 * Full text search
 	 * 
