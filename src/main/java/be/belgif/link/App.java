@@ -76,14 +76,16 @@ public class App extends Application<AppConfig> {
 	/**
 	 * Configure a triple store repository
 	 * 
-	 * @param config configuration object
+	 * @param cfg configuration object
 	 * @return repository 
 	 */
-	private Repository configRepo(AppConfig config) {
-		RepositoryManager repositoryManager = 
-								new RemoteRepositoryManager(config.getStore());
-		repositoryManager.initialize();
-		return repositoryManager.getRepository(config.getStoreName());
+	private Repository configRepo(AppConfig cfg) {
+		RemoteRepositoryManager mgr = new RemoteRepositoryManager(cfg.getStore());
+		if (cfg.getStoreUsername() != null && !cfg.getUsername().isEmpty()) {
+			mgr.setUsernameAndPassword(cfg.getStoreUsername(), cfg.getStorePassword());
+		}
+		mgr.initialize();
+		return mgr.getRepository(cfg.getStoreName());
 	}
 
 	@Override

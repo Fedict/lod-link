@@ -34,10 +34,16 @@ import io.dropwizard.Configuration;
  * @author Bart.Hanssens
  */
 public class AppConfig extends Configuration {
+	// front-end user/pass
 	private String username;
 	private String password;
+	
 	private String store;
 	private String storeName;
+	// RDF repo user/pass
+	private String storeUsername;
+	private String storePassword;
+	
 
 	@JsonProperty
 	public String getStore() {
@@ -75,5 +81,25 @@ public class AppConfig extends Configuration {
 	@JsonProperty
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	@JsonProperty
+	public String getStoreUsername() {
+		return storeUsername;
+	}
+
+	@JsonProperty
+	public void setStoreUsername(String username) {
+		this.storeUsername = username;
+	}
+
+	@JsonProperty
+	public String getStorePassword() {
+		return storePassword;
+	}
+
+	@JsonProperty
+	public void setStorePassword(String password) {
+		this.storePassword = password;
 	}
 }
