@@ -108,7 +108,7 @@ public class QueryHelper {
 	 * @return context URI
 	 */
 	public static IRI asGraph(String name) {
-		return F.createIRI(App.getGraphPrefix() + name);
+		return F.createIRI(name);
 	}
 
 	/**
