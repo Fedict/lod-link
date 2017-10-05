@@ -40,11 +40,23 @@ For PUT requests, the HTTP `Content-Type` header must be set, and UTF-8 encoding
 
 ## Retrieving all info about a link (GET)
 
+For backwards compatibility, two types of URLs can be used
 ```
 http://link.belgif.be/link?url=http://www.fedict.be
-https://id.belgium.be/link-lod/link?url=http://www.fedict.be
+https://id.belgium.be/link-lod/link?s=http://www.fedict.be
 ```
-Note: the value of the `url` parameter should be URL-encoded.
+Note: the value of the `url` / `s` parameter should be URL-encoded.
+
+## Retrieving all info about a graph / group of links (GET)
+
+If the data was stored in a named graph / context, it is possible to retrieve
+these triples all at once.
+
+```
+https://id.belgium.be/link-lod/link?g=https:%2F%2Fid.belgium.be%2Fgraph%2Fbe454d3d-f01b-4807-b1b7-ece2f70b2f23
+```
+Note: the value of the `g` parameter should be URL-encoded.
+
 
 ## Filtering link(s) (GET)
 
@@ -67,7 +79,11 @@ Assuming the username is `user` and the password `pass`, the previously mentione
 file can be uploaded using curl (or any other HTTP-tool) using the following command: 
 ```
 curl -v -T test.ttl -H "Content-Type: text/turtle" --basic http://user:pass@link.belgif.be/link
+curl -v -T test.ttl -H "Content-Type: text/turtle" --basic https://user:pass@id.belgium.be/link-lod/link
 ```
+
+Accepted formats are Turtle (ttl), N-Triples (nt) and JSON-LD.
+
 
 ## Removing a link (DELETE)
 
@@ -78,5 +94,22 @@ all information about the link `http://www.fedict.be` can be deleted using the f
 
 ```
 curl --request DELETE -v http://user:pass@link.belgif.be/link?url=http://www.fedict.be
+curl --request DELETE -v https://user:pass@id.belgium.be/link-lod/link?url=http://www.fedict.be
 ```
 Note: the value of the `url` parameter must be URL-encoded.
+
+## Removing a group of links / graph (DELETE)
+
+If the data was stored in a named graph / context, it is possible to delete
+these triples all at once.
+
+This requires HTTP basic authentication (i.e. a username and password)
+
+Assuming the username is `user` and the password `pass`, 
+all information about the graph `https://id.belgium.be/graph/be454d3d-f01b-4807-b1b7-ece2f70b2f23` 
+can be deleted using the following command:
+
+```
+curl --request DELETE -v http://user:pass@link.belgif.be/link?g=https:%2F%2Fid.belgium.be%2Fgraph%2Fbe454d3d-f01b-4807-b1b7-ece2f70b2f23
+```
+Note: the value of the `g` parameter must be URL-encoded.

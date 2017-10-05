@@ -35,12 +35,10 @@ import javax.annotation.security.PermitAll;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.eclipse.rdf4j.model.Model;
@@ -57,7 +55,8 @@ import org.eclipse.rdf4j.repository.Repository;
 @Produces({RDFMediaType.JSONLD, RDFMediaType.NTRIPLES, RDFMediaType.TTL})
 public class LinkResource  {
 	private final Repository repo;
-	
+
+			
 	/**
 	 * Get all triples for a subject
 	 * 
@@ -76,6 +75,16 @@ public class LinkResource  {
 		return null;
 	}
 	
+	/**
+	 * Alias for getting triples
+	 * 
+	 * @param url
+	 * @return 
+	 */
+	@GET
+	public Model getByUrl(@QueryParam("url") String url) {
+		return getById(url, null);
+	}
 	
 	/**
 	 * Add statements to the store
@@ -112,6 +121,19 @@ public class LinkResource  {
 		return Response.ok().build();
 	}
 
+	/**
+	 * Alias for deleting triples
+	 * 
+	 * @param url
+	 * @return 
+	 */
+	@PermitAll
+	@DELETE
+	@ExceptionMetered
+	public Response deleteUrl(@QueryParam("url") String url) {
+		return delete(url, null);
+	}
+	
 	/**
 	 * Full text search
 	 * 

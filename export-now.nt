@@ -1,0 +1,691 @@
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://purl.org/dc/terms/description> "Deuxi\u00E8me article \u00E0 tester"@fr .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://purl.org/dc/terms/identifier> "urn:uuid:974622a3-bae1-4029-95ca-acaa642043c2" .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://purl.org/dc/terms/title> "Deuxi\u00E8me article \u00E0 tester"@fr .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://www.w3.org/2000/01/rdf-schema#label> "Deuxi\u00E8me article \u00E0 tester"@fr .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://www.w3.org/ns/dcat#theme> <http://belgium.be/theme/TECH> .
+<http://dev-iwf-cms.pantheonsite.io/fr/deuxieme-article-a-tester> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/TECH> .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://purl.org/dc/terms/description> "Tweede artikel om te testen"@nl .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://purl.org/dc/terms/identifier> "urn:uuid:974622a3-bae1-4029-95ca-acaa642043c2" .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://purl.org/dc/terms/title> "Tweede artikel om te testen"@nl .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://www.w3.org/2000/01/rdf-schema#label> "Tweede artikel om te testen"@nl .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://www.w3.org/ns/dcat#theme> <http://belgium.be/theme/TECH> .
+<http://dev-iwf-cms.pantheonsite.io/nl/tweede-artikel-om-te-testen> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/TECH> .
+<http://www.fedict.be> <http://www.w3.org/2000/01/rdf-schema#label> "Fedict web site"@en .
+<http://www.fedict.be> <http://www.w3.org/2000/01/rdf-schema#label> "Site web de Fedict"@fr .
+<http://www.fedict.be> <http://www.w3.org/2000/01/rdf-schema#label> "Website van Fedict"@nl .
+<http://www.statbel.be> <http://www.w3.org/2000/01/rdf-schema#label> "Statbel web site"@en .
+<http://www.statbel.be> <http://www.w3.org/2000/01/rdf-schema#label> "Site web de Statbel"@fr .
+<http://www.statbel.be> <http://www.w3.org/2000/01/rdf-schema#label> "Website van Statbel"@nl .
+<http://www.statbel.be> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/ECON> .
+<https://dc.digital.belgium.be/forms/show/horizontal/complaint/1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Complaint form"@de .
+<https://dc.digital.belgium.be/forms/show/horizontal/complaint/1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Formulaire de plainte"@fr .
+<https://dc.digital.belgium.be/forms/show/horizontal/complaint/1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Klachtenformulier"@nl .
+<https://dc.digital.belgium.be/forms/show/horizontal/complaint/1.0> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+<https://demo.digital.ta.belgium.be/forms/show/fedict/meta/1.0> <http://www.w3.org/2000/01/rdf-schema#label> "IWF Formulaire de d\u00E9monstration meta-data"@fr .
+<https://demo.digital.ta.belgium.be/forms/show/fedict/meta/1.0> <http://www.w3.org/2000/01/rdf-schema#label> "IWF formulier voor demonstratie meta-data"@nl .
+<https://demo.digital.ta.belgium.be/forms/show/fedict/meta/1.0> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://purl.org/dc/terms/description> "Calculez le montant d&#039;imp\u00F4t des personnes physiques \u00E0 payer ou qui sera rembours\u00E9."@fr .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://purl.org/dc/terms/identifier> "urn:uuid:95b6a048-870a-4e86-9973-8a5349696676" .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://purl.org/dc/terms/title> "Tax-Calc : simulateur d\u2019imp\u00F4ts"@fr .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/TAXE#id> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/TAXE#id> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/common/changeLanguage.do> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://purl.org/dc/terms/description> "Inscrivez-vous et soyez pr\u00E9venu par SMS ou message vocal en cas de situation d&#039;urgence."@fr .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://purl.org/dc/terms/identifier> "urn:uuid:e6c2087e-2010-4301-be8d-380dac086d10" .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://purl.org/dc/terms/title> "Be-Alert"@fr .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://crisiscentrum.be/fr/content/be-alert-soyez-alerte-en-situation-durgence> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://purl.org/dc/terms/description> "Consultez votre dossier et vos paiements d&#039;allocations familiales en ligne."@fr .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://purl.org/dc/terms/identifier> "urn:uuid:7051901f-a4f9-4d38-93db-257a6d35e0d3" .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://purl.org/dc/terms/title> "MyFamifed"@fr .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<http://dg.famifed.be/fr/nouvelles/acc%C3%A9dez-en-ligne-%C3%A0-votre-dossier-dallocations-familiales-gr%C3%A2ce-%C3%A0-myfamifed> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://purl.org/dc/terms/description> "Consultez la base de donn\u00E9es des entrepreneurs belges agr\u00E9\u00E9s."@fr .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://purl.org/dc/terms/identifier> "urn:uuid:c7ccc067-d795-49b0-92db-995f4ab92e8d" .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://purl.org/dc/terms/title> "Mon entrepreneur est-il agr\u00E9\u00E9 ?"@fr .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://economie.fgov.be/fr/entreprises/domaines_specifiques/Qualite_construction/Agreation_entrepreneurs/Banque_donnees_entrepreneurs_agrees/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://purl.org/dc/terms/description> "Calculez directement le nouveau loyer index\u00E9 de votre habitation."@fr .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://purl.org/dc/terms/identifier> "urn:uuid:80b7c047-9c45-4ee9-8277-21ea16d30453" .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://purl.org/dc/terms/title> "Calculateur de l&#039;indexation des loyers"@fr .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://economie.fgov.be/fr/statistiques/chiffres/economie/prix_consommation/calculateur_loyer/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://purl.org/dc/terms/description> "Demandez un extrait cadastral (payant), imprimez des plans cadastraux\u2026"@fr .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://purl.org/dc/terms/identifier> "urn:uuid:8110576d-0937-4c1a-a69f-9c1248b1a207" .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://purl.org/dc/terms/title> "Mon cadastre"@fr .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://finances.belgium.be/fr/E-services/cadgis> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://purl.org/dc/terms/description> "Recherchez les donn\u00E9es de toutes les entreprises belges."@fr .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:2a49c95f-c85b-482a-a6b4-9d6f128a7cdb" .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://purl.org/dc/terms/title> "Banque-Carrefour des Entreprises"@fr .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ECON#id> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ECON#id> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://simulateurecopack.wallonie.be/> <http://purl.org/dc/terms/description> "Avec les simulateurs de la R\u00E9gion wallonne, vous pouvez estimer vos \u00E9conomies d&#039;\u00E9nergie."@fr .
+<http://simulateurecopack.wallonie.be/> <http://purl.org/dc/terms/identifier> "urn:uuid:9d30ade7-ca95-4bf3-abca-8691b8db92dc" .
+<http://simulateurecopack.wallonie.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://simulateurecopack.wallonie.be/> <http://purl.org/dc/terms/title> "Simulateurs d&#039;\u00E9conomies d\u2019\u00E9nergie"@fr .
+<http://simulateurecopack.wallonie.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ENVI#id> .
+<http://simulateurecopack.wallonie.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ENVI#id> .
+<http://simulateurecopack.wallonie.be/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://unia.be/fr/signaler-une-discrimination> <http://purl.org/dc/terms/description> "Signalez des propos racistes ou discriminatoires v\u00E9hicul\u00E9s sur internet. "@fr .
+<http://unia.be/fr/signaler-une-discrimination> <http://purl.org/dc/terms/identifier> "urn:uuid:41a54f62-23e9-4686-bc76-133f3d6990be" .
+<http://unia.be/fr/signaler-une-discrimination> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://unia.be/fr/signaler-une-discrimination> <http://purl.org/dc/terms/title> "Cyberhaine"@fr .
+<http://unia.be/fr/signaler-une-discrimination> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://unia.be/fr/signaler-une-discrimination> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://unia.be/fr/signaler-une-discrimination> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://purl.org/dc/terms/description> "Consultez les mesures et vos droits en tant que chercheur d&#039;emploi."@fr .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://purl.org/dc/terms/identifier> "urn:uuid:1981eb8e-8526-45ae-a388-26db34ab07cf" .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://purl.org/dc/terms/title> "Au travail : mesures pour l&#039;emploi"@fr .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.brugel.be/fr/brugel> <http://purl.org/dc/terms/description> "Comparez les prix et les conditions des fournisseurs d\u2019\u00E9nergie en R\u00E9gion bruxelloise."@fr .
+<http://www.brugel.be/fr/brugel> <http://purl.org/dc/terms/identifier> "urn:uuid:9aee18a1-e938-4734-adb4-c888586b21a1" .
+<http://www.brugel.be/fr/brugel> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.brugel.be/fr/brugel> <http://purl.org/dc/terms/title> "Fournisseurs d\u2019\u00E9nergie \u00E0 Bruxelles"@fr .
+<http://www.brugel.be/fr/brugel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.brugel.be/fr/brugel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.brugel.be/fr/brugel> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/description> "Comparez les prix et les conditions des fournisseurs d\u2019\u00E9nergie en Wallonie."@fr .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/description> "Vergelijk de prijzen en de voorwaarden van de energieleveranciers in Walloni\u00EB. "@nl .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/identifier> "urn:uuid:b47cf85a-7722-46f7-bc56-20ee67111f76" .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/title> "Fournisseurs d&#039;\u00E9nergie en Wallonie"@fr .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://purl.org/dc/terms/title> "Energieleveranciers in Walloni\u00EB"@nl .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.compacwape.be/proc/simulation;jsessionid=63E9B7EE41B61BBA9523DB9F3EA47147?execution=e1s1> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.ecoscore.be/calculator?locale=fr> <http://purl.org/dc/terms/description> "Calculez l&#039;impact sur l&#039;environnement (Ecoscore) de votre v\u00E9hicule."@fr .
+<http://www.ecoscore.be/calculator?locale=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:9164f431-b98c-4b8f-aec6-8a37a747cb1f" .
+<http://www.ecoscore.be/calculator?locale=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.ecoscore.be/calculator?locale=fr> <http://purl.org/dc/terms/title> "Ecoscore automobile"@fr .
+<http://www.ecoscore.be/calculator?locale=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.ecoscore.be/calculator?locale=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.ecoscore.be/calculator?locale=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://purl.org/dc/terms/description> "Estimez votre consommation d&#039;\u00E9nergie et vos \u00E9missions de CO2 afin de les r\u00E9duire. "@fr .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://purl.org/dc/terms/identifier> "urn:uuid:5e5220e9-2c9d-49ef-9460-451b5af46383" .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://purl.org/dc/terms/title> "Energivores : mon utilisation d&#039;\u00E9nergie"@fr .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ENVI#id> .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ENVI#id> .
+<http://www.energievreters.be/profile_Intro.aspx?lang=FR> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://purl.org/dc/terms/description> "Demandez une attestation concernant un accident du travail."@fr .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://purl.org/dc/terms/identifier> "urn:uuid:ddc30172-9e1a-4f76-990a-a2f5d355543d" .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://purl.org/dc/terms/title> "Mon attestation d&#039;accident du travail"@fr .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.fat.fgov.be/fr/formulaires/besoin-dune-attestation> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://purl.org/dc/terms/description> "Demandez une r\u00E9impression des codes PIN et PUK de votre carte eID."@fr .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://purl.org/dc/terms/identifier> "urn:uuid:f44158ec-ac2a-4bde-9da7-359b5a020b53" .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://purl.org/dc/terms/title> "Codes PIN et PUK"@fr .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://www.ibz.rrn.fgov.be/fr/documents-didentite/eid/demande-dun-code-pin/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://purl.org/dc/terms/description> "Recherchez un m\u00E9decin et v\u00E9rifiez s&#039;il est conventionn\u00E9."@fr .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://purl.org/dc/terms/identifier> "urn:uuid:4eecaa91-f38c-41d1-b1a1-505b317cf425" .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://purl.org/dc/terms/title> "Mon m\u00E9decin est-il conventionn\u00E9 ?"@fr .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<http://www.inami.fgov.be/fr/programmes-web/Pages/rechercher-dispensateur-soins.aspx#.VjMqT7cvdD8> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/description> "Signalez des conditions de circulation sur les pistes cyclables en Flandre."@fr .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/description> "Meld verkeerssituaties op de Vlaamse fietspaden."@nl .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/identifier> "urn:uuid:af15bb1d-ecc3-450a-b70e-0eff49bb891d" .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/title> "Pistes cyclables en Flandre"@fr .
+<http://www.meldpuntfietspaden.be/> <http://purl.org/dc/terms/title> "Meldpunt fietspaden"@nl .
+<http://www.meldpuntfietspaden.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.meldpuntfietspaden.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.meldpuntfietspaden.be/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/description> "Signalez des conditions de circulation dangereuses sur le r\u00E9seau routier en Flandre."@fr .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/description> "Signaleer gevaarlijke verkeerssituaties op de Vlaamse wegen. "@nl .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/identifier> "urn:uuid:b44d1aba-b352-48fe-b475-d329bcb85ece" .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/title> "Etats des routes en Flandre"@fr .
+<http://www.meldpuntwegen.be/stap1.php> <http://purl.org/dc/terms/title> "Meldpunt wegen"@nl .
+<http://www.meldpuntwegen.be/stap1.php> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.meldpuntwegen.be/stap1.php> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.meldpuntwegen.be/stap1.php> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://purl.org/dc/terms/description> "R\u00E9digez et faites enregistrer un contrat de bail en ligne."@fr .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:e366c439-4961-4c7c-8551-aa1b9dffc90d" .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://purl.org/dc/terms/title> "MyRent : contrats de bail"@fr .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.minfin.fgov.be/portail2/fr/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://purl.org/dc/terms/description> "Consultez l\u2019\u00E9tat d\u2019une demande d\u2019immatriculation, d\u2019une plaque ou d\u2019un num\u00E9ro de ch\u00E2ssis."@fr .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://purl.org/dc/terms/identifier> "urn:uuid:35552321-3440-4f7a-80d1-de012000f390" .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://purl.org/dc/terms/title> "Ma plaque d&#039;immatriculation"@fr .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.mobilit.fgov.be/WebdivPub_FR/wmvpstv1_fr?SUBSESSIONID=1113036> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://purl.org/dc/terms/description> "Calculez le montant mensuel de l&#039;allocation de garantie de revenus."@fr .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://purl.org/dc/terms/identifier> "urn:uuid:3d260b47-7fa0-4ddb-b28b-a09257c5880a" .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://purl.org/dc/terms/title> "Ma garantie de revenus"@fr .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.onem.be/fr/documentation/bar%C3%A8mes/travail-temps-partiel> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.vreg.be/fr> <http://purl.org/dc/terms/description> "Comparez les prix et les conditions des fournisseurs d\u2019\u00E9nergie en Flandre."@fr .
+<http://www.vreg.be/fr> <http://purl.org/dc/terms/identifier> "urn:uuid:898a7413-d1d4-478b-9c2c-9e36957fa7d4" .
+<http://www.vreg.be/fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<http://www.vreg.be/fr> <http://purl.org/dc/terms/title> "Fournisseurs d&#039;\u00E9nergie en Flandre"@fr .
+<http://www.vreg.be/fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.vreg.be/fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.vreg.be/fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://purl.org/dc/terms/description> "Consultez les offres d&#039;emploi de l&#039;administration publique f\u00E9d\u00E9rale et postulez en ligne."@fr .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:c1ef5c8f-6a29-4688-a27e-3d28cd527634" .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://purl.org/dc/terms/title> "Mon Selor"@fr .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://b2c.selor.be/Account/Logon?ui_language=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://purl.org/dc/terms/description> "Un litige avec un commer\u00E7ant ? Contactez en ligne un m\u00E9diateur ind\u00E9pendant."@fr .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://purl.org/dc/terms/identifier> "urn:uuid:edaa98ee-fa16-43fc-92d0-be6c2aac2b18" .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://purl.org/dc/terms/title> "Belmed : m\u00E9diation pour consommateurs"@fr .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/JUST#id> .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/JUST#id> .
+<https://belmed.economie.fgov.be/belmed/faces/login/login_form.jsf?belmed-user-language=FR> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://purl.org/dc/terms/description> "Consultez et g\u00E9rez votre dossier fiscal (Tax-on-web, documents personnels...)."@fr .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://purl.org/dc/terms/identifier> "urn:uuid:8db55ae0-289f-41b3-a34e-d6a4764f3a57" .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://purl.org/dc/terms/title> "My Minfin : mon dossier fiscal"@fr .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/portal/fr/public/citizen/welcome> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/description> "Remplissez et envoyez votre d\u00E9claration d&#039;imp\u00F4t des personnes physiques en ligne."@fr .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/description> "Vul uw aangifte in de personenbelasting online in en verstuur ze ook online."@nl .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/identifier> "urn:uuid:72cccbc3-3462-489c-b050-33f472f860af" .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/title> "Tax-on-web"@fr .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://purl.org/dc/terms/title> "Tax-on-web"@nl .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/taxonweb/app/citizen/public/taxbox/home.do> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/description> "Toutes les cl\u00E9s num\u00E9riques qu&#039;offre CSAM pour s&#039;identifier sur les services publics en ligne"@fr .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/description> "Alle digitale sleutels die CSAM aanbiedt om zich veilig aan te melden op de onlinediensten van de overheid. "@nl .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/identifier> "urn:uuid:64b1f96e-8170-4e2f-8561-99d66fe3e1f9" .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/title> "Mes cl\u00E9s num\u00E9riques"@fr .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://purl.org/dc/terms/title> "Mijn digitale sleutels "@nl .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://iamapps.belgium.be/sma/external/selfManagement/credential> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/description> "Consultez votre dossier au Registre national et signalez un changement d&#039;adresse."@fr .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/description> "Raadpleeg uw dossier bij het Rijksregister en meld een adreswijziging."@nl .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/identifier> "urn:uuid:239021ee-0897-4c5c-823d-7279ff3e1ee2" .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/title> "Mon Registre national"@fr .
+<https://mijndossier.rrn.fgov.be/> <http://purl.org/dc/terms/title> "Mijn Rijksregister"@nl .
+<https://mijndossier.rrn.fgov.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://mijndossier.rrn.fgov.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://mijndossier.rrn.fgov.be/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://purl.org/dc/terms/description> "En tant que travailleur / pensionn\u00E9 du r\u00E9gime salari\u00E9, consultez votre dossier de pension."@fr .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://purl.org/dc/terms/identifier> "urn:uuid:e34d7182-cb02-454d-a798-ab7b4c6dd21b" .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://purl.org/dc/terms/title> "MyPension"@fr .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://mypension.onprvp.fgov.be/fr/mypension/pages/default.aspx> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/description> "Consultez les r\u00E9sultats des inspections sanitaires dans les restaurants, snacks, magasins\u2026"@fr .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/description> "Raadpleeg de resultaten van de sanitaire inspecties in restaurants, snacks, winkels \u2026"@nl .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/identifier> "urn:uuid:f8707fa2-f2db-44ab-a030-5539f6ae3b85" .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/title> "Inspection sanitaire des restaurants"@fr .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://purl.org/dc/terms/title> "Sanitaire inspectie van restaurants "@nl .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://operator.foodweb.be/public/searchoperator.aspx> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://purl.org/dc/terms/description> "Faites une d\u00E9claration aupr\u00E8s de la police ou enregistrez un syst\u00E8me d&#039;alarme. "@fr .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:e9dcbf57-0589-426e-874c-84d458d677dc" .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://purl.org/dc/terms/title> "Police-on-web"@fr .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://professionals.car-pass.be/verify?lang=fr> <http://purl.org/dc/terms/description> "V\u00E9rifiez l&#039;authenticit\u00E9 du Car-Pass d&#039;une voiture que vous souhaitez acheter."@fr .
+<https://professionals.car-pass.be/verify?lang=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:2c87956b-8f27-475e-931c-08ec5c4118c0" .
+<https://professionals.car-pass.be/verify?lang=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://professionals.car-pass.be/verify?lang=fr> <http://purl.org/dc/terms/title> "Car-Pass"@fr .
+<https://professionals.car-pass.be/verify?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<https://professionals.car-pass.be/verify?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<https://professionals.car-pass.be/verify?lang=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://purl.org/dc/terms/description> "Consultez votre droit au tarif social en mati\u00E8re de gaz et d&#039;\u00E9lectricit\u00E9."@fr .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://purl.org/dc/terms/identifier> "urn:uuid:c2c02948-a74d-4f4f-bf9c-f55587ac5494" .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://purl.org/dc/terms/title> "Mon tarif social gaz et \u00E9lectricit\u00E9"@fr .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=fr> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/description> "Commandez vos titres-services en ligne."@fr .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/description> "Bestel uw dienstencheques online. "@nl .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/identifier> "urn:uuid:f7c17731-854c-4772-ac45-015872e34d7f" .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/title> "Mes titres-services"@fr .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://purl.org/dc/terms/title> "Mijn dienstencheques"@nl .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://soeasy.sodexo.be/ServiceVouchers/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/description> "Signalez votre voyage hors Union europ\u00E9enne afin d&#039;\u00EAtre inform\u00E9 en cas de catastrophe."@fr .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/description> "Signaleer uw reis buiten de Europese Unie om verwittigd te worden bij een ramp. "@nl .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/identifier> "urn:uuid:fcd7921d-6f7b-4022-bee3-66392574fc47" .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/title> "Signalement de voyage \u00E0 l&#039;\u00E9tranger"@fr .
+<https://travellersonline.diplomatie.be/> <http://purl.org/dc/terms/title> "Melding van een reis naar het buitenland"@nl .
+<https://travellersonline.diplomatie.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<https://travellersonline.diplomatie.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<https://travellersonline.diplomatie.be/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://purl.org/dc/terms/description> "D\u00E9poser en ligne votre dossier de cr\u00E9ation d&#039;association ou d\u2019entreprise"@fr .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://purl.org/dc/terms/identifier> "urn:uuid:b0e70c14-933e-4ae5-a8b6-5d8f227e66bf" .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://purl.org/dc/terms/title> "e-Greffe"@fr .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/JUST#id> .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/JUST#id> .
+<https://www.e-griffie.be/evzw/fr_BE/homepage> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.ehealth.fgov.be/fr/citizen> <http://purl.org/dc/terms/description> "Consultez certaines informations sp\u00E9cifiques au domaine de la sant\u00E9."@fr .
+<https://www.ehealth.fgov.be/fr/citizen> <http://purl.org/dc/terms/identifier> "urn:uuid:c644d0ef-c058-4519-be06-2a57dc854354" .
+<https://www.ehealth.fgov.be/fr/citizen> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.ehealth.fgov.be/fr/citizen> <http://purl.org/dc/terms/title> "Mon dossier sant\u00E9"@fr .
+<https://www.ehealth.fgov.be/fr/citizen> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.ehealth.fgov.be/fr/citizen> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.ehealth.fgov.be/fr/citizen> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://purl.org/dc/terms/description> "En tant qu&#039;\u00E9tudiant, v\u00E9rifiez le nombre de jours que vous pouvez encore prester."@fr .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://purl.org/dc/terms/identifier> "urn:uuid:42a9483f-37f0-4942-9a4b-c5d35fbc89bd" .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://purl.org/dc/terms/title> "Mon Student@work "@fr .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.mysocialsecurity.be/student/fr/index.html> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/description> "Consultez toutes les primes disponibles aux niveaux f\u00E9d\u00E9ral, r\u00E9gional et provincial (NL)."@fr .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/description> "Raadpleeg alle mogelijke premies op federaal, regionaal en provinciaal vlak."@nl .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/identifier> "urn:uuid:bf186144-028a-4fad-a502-8fde10a3ad32" .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/title> "Mes primes (NL)"@fr .
+<https://www.premiezoeker.be/> <http://purl.org/dc/terms/title> "Premiezoeker"@nl .
+<https://www.premiezoeker.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<https://www.premiezoeker.be/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<https://www.premiezoeker.be/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://purl.org/dc/terms/description> "Consultez vos droits sociaux si vous venez vivre en Belgique, y travailler ou \u00E9tudier."@fr .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://purl.org/dc/terms/identifier> "urn:uuid:b6373ed4-133a-4d14-82ca-22cd438c04a0" .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://purl.org/dc/terms/title> "Coming2Belgium : s\u00E9curit\u00E9 sociale"@fr .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/fr/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://purl.org/dc/terms/description> "Consultez vos droits sociaux si vous partez vivre, travailler ou \u00E9tudier \u00E0 l&#039;\u00E9tranger."@fr .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://purl.org/dc/terms/identifier> "urn:uuid:d1b7c09b-c65e-4f7d-bffd-3b65415100c9" .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://purl.org/dc/terms/title> "Quitter la Belgique : s\u00E9curit\u00E9 sociale"@fr .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/fr/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://purl.org/dc/terms/description> "En tant qu&#039;ouvrier, apprenti ou artiste sous contrat, consultez vos donn\u00E9es de vacances."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:a2bc91d9-7180-4431-8272-98abb7b84ff6" .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://purl.org/dc/terms/title> "Mes vacances annuelles"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://purl.org/dc/terms/description> "Calculez le montant mensuel de l&#039;allocation d&#039;interruption de carri\u00E8re ou de cr\u00E9dit-temps."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:d057fe12-afcc-44e0-a6b7-3fd6ca6a0b10" .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://purl.org/dc/terms/title> "Interruption de carri\u00E8re et cr\u00E9dit-temps"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://purl.org/dc/terms/description> "Consultez votre dossier de s\u00E9curit\u00E9 sociale aupr\u00E8s du service Personnes handicap\u00E9es."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:ce38e282-815c-4c53-a773-55369d948cba" .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://purl.org/dc/terms/title> "Handiweb : dossier s\u00E9curit\u00E9 sociale"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/handiweb/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/description> "Calculez le nombre de jours qu&#039;un travailleur du secteur Horeca peut encore prester."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:cc397e7d-2172-490a-a03b-367b0f07b431" .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/title> "Mon Horeca@work"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://purl.org/dc/terms/description> "Demandez votre pension ou votre garantie de revenus aux personnes \u00E2g\u00E9es (Grapa) en ligne."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:ed2db4a4-511b-4bc9-8e3e-6ba09ed04990" .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://purl.org/dc/terms/title> "Demande de pension en ligne"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/fr/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/description> "Recevez vos documents officiels des institutions de la s\u00E9curit\u00E9 sociale."@fr .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:74fceea3-279d-4796-b93e-141c6e238b6a" .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/title> "Mon &quot;eBox&quot; de la s\u00E9curit\u00E9 sociale"@fr .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/fr/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/description> "Consultez votre dossier de ch\u00F4mage en ligne."@fr .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:d0c89877-2668-40ab-bcca-cda69e1e54d7" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/title> "Mon dossier de ch\u00F4mage"@fr .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://purl.org/dc/terms/description> "Recevez votre carte de travail Activa par e-mail."@fr .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:8cf391ac-06aa-4919-b477-4aa7166aef36" .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/FRA> .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://purl.org/dc/terms/title> "Ma carte Activa"@fr .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/fr/citizen/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://purl.org/dc/terms/description> "Bereken welk bedrag aan personenbelasting u verschuldigd bent of u wordt terugbetaald."@nl .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://purl.org/dc/terms/identifier> "urn:uuid:95b6a048-870a-4e86-9973-8a5349696676" .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://purl.org/dc/terms/title> "Tax-Calc: belastingensimulator"@nl .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/TAXE#id> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/TAXE#id> .
+<http://ccff02.minfin.fgov.be/taxcalc/app/anonymous/public/calcbox/home.do> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://purl.org/dc/terms/description> "Schrijf u in en wordt via sms of spraakbericht verwittigd bij een noodsituatie. "@nl .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://purl.org/dc/terms/identifier> "urn:uuid:e6c2087e-2010-4301-be8d-380dac086d10" .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://purl.org/dc/terms/title> "Be-Alert"@nl .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://crisiscentrum.be/nl/inhoud/be-alert-alarmering-bij-een-noodsituatie> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://purl.org/dc/terms/description> "Raadpleeg uw kinderbijslagdossier en uw kinderbijslagbetalingen online."@nl .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://purl.org/dc/terms/identifier> "urn:uuid:7051901f-a4f9-4d38-93db-257a6d35e0d3" .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://purl.org/dc/terms/title> "MyFamifed"@nl .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<http://dg.famifed.be/nl/nieuws/myfamifed-geeft-je-toegang-tot-je-kinderbijslagdossier> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://purl.org/dc/terms/description> "Raadpleeg de database van de erkende Belgische aannemers."@nl .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://purl.org/dc/terms/identifier> "urn:uuid:c7ccc067-d795-49b0-92db-995f4ab92e8d" .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://purl.org/dc/terms/title> "Is mijn aannemer erkend?"@nl .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://economie.fgov.be/nl/ondernemingen/specifieke_domeinen/kwaliteit_bouw/Agreation_entrepreneur/Databank_erkende_aannemers/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://purl.org/dc/terms/description> "Bereken onmiddellijk de nieuwe ge\u00EFndexeerde huurprijs van uw woning."@nl .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://purl.org/dc/terms/identifier> "urn:uuid:80b7c047-9c45-4ee9-8277-21ea16d30453" .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://purl.org/dc/terms/title> "Calculator huurprijsindexeringen"@nl .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://economie.fgov.be/nl/statistieken/cijfers/economie/consumptieprijzen/huurcalculator/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://purl.org/dc/terms/description> "Vraag een kadastraal uittreksel (betalend) aan, print kadasterplannen af ..."@nl .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://purl.org/dc/terms/identifier> "urn:uuid:8110576d-0937-4c1a-a69f-9c1248b1a207" .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://purl.org/dc/terms/title> "Mijn kadaster"@nl .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://financien.belgium.be/nl/E-services/cadgis/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://purl.org/dc/terms/description> "Zoek de gegevens op van alle Belgische ondernemingen."@nl .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://purl.org/dc/terms/identifier> "urn:uuid:2a49c95f-c85b-482a-a6b4-9d6f128a7cdb" .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://purl.org/dc/terms/title> "Kruispuntbank van Ondernemingen "@nl .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ECON#id> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ECON#id> .
+<http://kbopub.economie.fgov.be/kbopub/zoeknummerform.html;jsessionid=F592DF900178056C37B2A0C013C92E2C.worker4a> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://unia.be/nl/discriminatie-melden> <http://purl.org/dc/terms/description> "Meld racisme of discriminatie op het internet."@nl .
+<http://unia.be/nl/discriminatie-melden> <http://purl.org/dc/terms/identifier> "urn:uuid:41a54f62-23e9-4686-bc76-133f3d6990be" .
+<http://unia.be/nl/discriminatie-melden> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://unia.be/nl/discriminatie-melden> <http://purl.org/dc/terms/title> "Cyberhate"@nl .
+<http://unia.be/nl/discriminatie-melden> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://unia.be/nl/discriminatie-melden> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://unia.be/nl/discriminatie-melden> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://purl.org/dc/terms/description> "Raadpleeg de maatregelen en uw rechten als werkzoekende. "@nl .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://purl.org/dc/terms/identifier> "urn:uuid:1981eb8e-8526-45ae-a388-26db34ab07cf" .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://purl.org/dc/terms/title> "Aan de slag: tewerkstellingsmaatregelen"@nl .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.aandeslag.be/web4/fot2web/userProfile.do?method=load&language=nl&viewPoint=employee> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.brugel.be/nl/brugel> <http://purl.org/dc/terms/description> "Vergelijk de prijzen en de voorwaarden van de energieleveranciers in het Brussels Gewest. "@nl .
+<http://www.brugel.be/nl/brugel> <http://purl.org/dc/terms/identifier> "urn:uuid:9aee18a1-e938-4734-adb4-c888586b21a1" .
+<http://www.brugel.be/nl/brugel> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.brugel.be/nl/brugel> <http://purl.org/dc/terms/title> "Energieleveranciers in Brussel "@nl .
+<http://www.brugel.be/nl/brugel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.brugel.be/nl/brugel> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.brugel.be/nl/brugel> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.ecoscore.be/calculator?locale=nl> <http://purl.org/dc/terms/description> "Bereken de milieu-impact van uw voertuig (ecoscore)."@nl .
+<http://www.ecoscore.be/calculator?locale=nl> <http://purl.org/dc/terms/identifier> "urn:uuid:9164f431-b98c-4b8f-aec6-8a37a747cb1f" .
+<http://www.ecoscore.be/calculator?locale=nl> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.ecoscore.be/calculator?locale=nl> <http://purl.org/dc/terms/title> "Ecoscore van voertuigen"@nl .
+<http://www.ecoscore.be/calculator?locale=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.ecoscore.be/calculator?locale=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.ecoscore.be/calculator?locale=nl> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.energiesparen.be/energiewinst/> <http://purl.org/dc/terms/description> "Met de simulatoren van het Vlaams Gewest kunt u schatten hoeveel energie u bespaart."@nl .
+<http://www.energiesparen.be/energiewinst/> <http://purl.org/dc/terms/identifier> "urn:uuid:9d30ade7-ca95-4bf3-abca-8691b8db92dc" .
+<http://www.energiesparen.be/energiewinst/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.energiesparen.be/energiewinst/> <http://purl.org/dc/terms/title> "Energiebesparingssimulatoren"@nl .
+<http://www.energiesparen.be/energiewinst/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ENVI#id> .
+<http://www.energiesparen.be/energiewinst/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ENVI#id> .
+<http://www.energiesparen.be/energiewinst/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://purl.org/dc/terms/description> "Maak een schatting van uw energieverbruik en uw CO2-uitstoot om die te verlagen. "@nl .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://purl.org/dc/terms/identifier> "urn:uuid:5e5220e9-2c9d-49ef-9460-451b5af46383" .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://purl.org/dc/terms/title> "Energievreters: mijn energieverbruik"@nl .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/ENVI#id> .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/ENVI#id> .
+<http://www.energievreters.be/profile_Intro.aspx?mod=1&lang=NL> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://purl.org/dc/terms/description> "Vraag een attest aan voor een arbeidsongeval. "@nl .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://purl.org/dc/terms/identifier> "urn:uuid:ddc30172-9e1a-4f76-990a-a2f5d355543d" .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://purl.org/dc/terms/title> "Mijn arbeidsongevalattest"@nl .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.fao.fgov.be/nl/formulieren/attest-nodig> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://purl.org/dc/terms/description> "Vraag de herdruk van de PIN- en PUK-codes van uw eID aan."@nl .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://purl.org/dc/terms/identifier> "urn:uuid:f44158ec-ac2a-4bde-9da7-359b5a020b53" .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://purl.org/dc/terms/title> "PIN- en PUK codes"@nl .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<http://www.ibz.rrn.fgov.be/nl/identiteitsdocumenten/eid/aanvraag-pincode/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://purl.org/dc/terms/description> "Stel online een huurcontract op en laat het ook online registreren. "@nl .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:e366c439-4961-4c7c-8551-aa1b9dffc90d" .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://purl.org/dc/terms/title> "MyRent: huurcontracten"@nl .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.minfin.fgov.be/portail2/nl/e-services/myrent/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://purl.org/dc/terms/description> "Hoe ver staat uw aanvraag voor een inschrijving, een nummerplaat of een chassisnummer. "@nl .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://purl.org/dc/terms/identifier> "urn:uuid:35552321-3440-4f7a-80d1-de012000f390" .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://purl.org/dc/terms/title> "Mijn nummerplaat"@nl .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<http://www.mobilit.fgov.be/WebdivPub/wmvpstv1?SUBSESSIONID=1100060> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://purl.org/dc/terms/description> "Bereken het maandelijks bedrag van de inkomensgarantie-uitkering."@nl .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://purl.org/dc/terms/identifier> "urn:uuid:3d260b47-7fa0-4ddb-b28b-a09257c5880a" .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://purl.org/dc/terms/title> "Mijn inkomensgarantie"@nl .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<http://www.rva.be/nl/documentatie/barema%27s/deeltijdse-arbeid> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://purl.org/dc/terms/description> "Vergelijk de prijzen en de voorwaarden van de energieleveranciers in Vlaanderen. "@nl .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://purl.org/dc/terms/identifier> "urn:uuid:898a7413-d1d4-478b-9c2c-9e36957fa7d4" .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://purl.org/dc/terms/title> "Energieleveranciers in Vlaanderen "@nl .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<http://www.vreg.be/nl/prijzen-vergelijken-v-test> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://purl.org/dc/terms/description> "Raadpleeg de jobaanbiedingen van de federale overheid en solliciteer online. "@nl .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://purl.org/dc/terms/identifier> "urn:uuid:c1ef5c8f-6a29-4688-a27e-3d28cd527634" .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://purl.org/dc/terms/title> "Mijn Selor"@nl .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://b2c.selor.be/Account/Logon?returnUrl=/MyTasksAndMessages> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://purl.org/dc/terms/description> "Een geschil met een handelaar? Raadpleeg online een onafhankelijke bemiddelaar."@nl .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://purl.org/dc/terms/identifier> "urn:uuid:edaa98ee-fa16-43fc-92d0-be6c2aac2b18" .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://purl.org/dc/terms/title> "Belmed: ombudsdienst voor consumenten"@nl .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/JUST#id> .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/JUST#id> .
+<https://belmed.economie.fgov.be/belmed/faces/register/register_form_eid.jsf?belmed-user-language=nl> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://purl.org/dc/terms/description> "Raadpleeg en beheer uw fiscaal dossier (Tax-on-web, persoonlijke documenten \u2026)."@nl .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://purl.org/dc/terms/identifier> "urn:uuid:8db55ae0-289f-41b3-a34e-d6a4764f3a57" .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://purl.org/dc/terms/title> "My Minfin: mijn fiscaal dossier"@nl .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/TAXE#id> .
+<https://eservices.minfin.fgov.be/portal/nl/private/citizen/datasanddocs/personal> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://purl.org/dc/terms/description> "Raadpleeg uw pensioendossier als werknemer / gepensioneerde werknemer."@nl .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://purl.org/dc/terms/identifier> "urn:uuid:e34d7182-cb02-454d-a798-ab7b4c6dd21b" .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://purl.org/dc/terms/title> "MyPension"@nl .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://mypension.onprvp.fgov.be/nl/mypension/paginas/default.aspx> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://purl.org/dc/terms/description> "Doe een aangifte bij de politie of registreer een alarmsysteem. "@nl .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://purl.org/dc/terms/identifier> "urn:uuid:e9dcbf57-0589-426e-874c-84d458d677dc" .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://purl.org/dc/terms/title> "Police-on-web"@nl .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/SECU#id> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/SECU#id> .
+<https://policeonweb.belgium.be/eloket/selectComplaintTypeAndAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://professionals.car-pass.be/verify?lang=nl> <http://purl.org/dc/terms/description> "Controleer de echtheid van de Car-Pass van een wagen die u wenst aan te kopen. "@nl .
+<https://professionals.car-pass.be/verify?lang=nl> <http://purl.org/dc/terms/identifier> "urn:uuid:2c87956b-8f27-475e-931c-08ec5c4118c0" .
+<https://professionals.car-pass.be/verify?lang=nl> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://professionals.car-pass.be/verify?lang=nl> <http://purl.org/dc/terms/title> "Car-Pass"@nl .
+<https://professionals.car-pass.be/verify?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/MOBI#id> .
+<https://professionals.car-pass.be/verify?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/MOBI#id> .
+<https://professionals.car-pass.be/verify?lang=nl> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://purl.org/dc/terms/description> "Raadpleeg of u recht hebt op een sociaal tarief voor gas en elektriciteit."@nl .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://purl.org/dc/terms/identifier> "urn:uuid:c2c02948-a74d-4f4f-bf9c-f55587ac5494" .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://purl.org/dc/terms/title> "Mijn sociaal tarief gas en elektriciteit"@nl .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HOUS#id> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HOUS#id> .
+<https://soctar.belgium.be/soctar/selectAuthentication.action?lang=nl> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://purl.org/dc/terms/description> "Dien online uw dossier in voor de oprichting van een vereniging of een onderneming"@nl .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://purl.org/dc/terms/identifier> "urn:uuid:b0e70c14-933e-4ae5-a8b6-5d8f227e66bf" .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://purl.org/dc/terms/title> "e-Griffie"@nl .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/JUST#id> .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/JUST#id> .
+<https://www.e-griffie.be/evzw/nl/homepage> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.ehealth.fgov.be/nl/citizen> <http://purl.org/dc/terms/description> "Raadpleeg specifieke informatie in verband met gezondheid. "@nl .
+<https://www.ehealth.fgov.be/nl/citizen> <http://purl.org/dc/terms/identifier> "urn:uuid:c644d0ef-c058-4519-be06-2a57dc854354" .
+<https://www.ehealth.fgov.be/nl/citizen> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.ehealth.fgov.be/nl/citizen> <http://purl.org/dc/terms/title> "Mijn gezondheidsdossier"@nl .
+<https://www.ehealth.fgov.be/nl/citizen> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.ehealth.fgov.be/nl/citizen> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.ehealth.fgov.be/nl/citizen> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://purl.org/dc/terms/description> "Zoek een dokter en ga na of hij geconventioneerd is. "@nl .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://purl.org/dc/terms/identifier> "urn:uuid:4eecaa91-f38c-41d1-b1a1-505b317cf425" .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://purl.org/dc/terms/title> "Is mijn dokter geconventioneerd? "@nl .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.inami.fgov.be/webprd/appl/psilverpages/nl/> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://purl.org/dc/terms/description> "Controleer als student het aantal dagen dat u nog mag werken. "@nl .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://purl.org/dc/terms/identifier> "urn:uuid:42a9483f-37f0-4942-9a4b-c5d35fbc89bd" .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://purl.org/dc/terms/title> "Mijn Student@work "@nl .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.mysocialsecurity.be/student/nl/index.html?utm_source=Google&utm_medium=Adwords&utm_campaign=jobstudent> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://purl.org/dc/terms/description> "Verneem alles over uw sociale rechten als u in Belgi\u00EB komt wonen, werken of studeren. "@nl .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://purl.org/dc/terms/identifier> "urn:uuid:b6373ed4-133a-4d14-82ca-22cd438c04a0" .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://purl.org/dc/terms/title> "Coming2Belgium: sociale zekerheid"@nl .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/nl/coming_to_belgium/index.html> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://purl.org/dc/terms/description> "Raadpleeg uw sociale rechten als u in het buitenland gaat wonen, werken of studeren. "@nl .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://purl.org/dc/terms/identifier> "urn:uuid:d1b7c09b-c65e-4f7d-bffd-3b65415100c9" .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://purl.org/dc/terms/title> "Belgi\u00EB verlaten: sociale zekerheid"@nl .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/FAMI#id> .
+<https://www.socialsecurity.be/CMS/nl/leaving_belgium/index.html> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://purl.org/dc/terms/description> "Raadpleeg uw sociale zekerheidsdossier bij de dienst Personen met een handicap. "@nl .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://purl.org/dc/terms/identifier> "urn:uuid:ce38e282-815c-4c53-a773-55369d948cba" .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://purl.org/dc/terms/title> "Handiweb: dossier sociale zekerheid"@nl .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/app025/handiweb/login.do> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://purl.org/dc/terms/description> "Raadpleeg uw vakantiegegevens als arbeider, leerling of kunstenaar met een contract."@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:a2bc91d9-7180-4431-8272-98abb7b84ff6" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://purl.org/dc/terms/title> "Mijn jaarlijkse vakantie"@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/cova2/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://purl.org/dc/terms/description> "Bereken het maandelijks bedrag van de loopbaanonderbrekings- of tijdskredietsuitkering. "@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:d057fe12-afcc-44e0-a6b7-3fd6ca6a0b10" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://purl.org/dc/terms/title> "Loopbaanonderbreking en tijdskrediet"@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/elo/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/description> "Bereken het aantal dagen dat een werknemer uit de horecasector nog mag presteren. "@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:cc397e7d-2172-490a-a03b-367b0f07b431" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://purl.org/dc/terms/title> "Mijn Horeca@work "@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/horecaatwork/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://purl.org/dc/terms/description> "Vraag uw pensioen of uw inkomensgarantie voor ouderen (IGO) online aan."@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:ed2db4a4-511b-4bc9-8e3e-6ba09ed04990" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://purl.org/dc/terms/title> "Online pensioenaanvraag"@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/penonline/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://purl.org/dc/terms/description> "Ontvang uw Activa werkkaart per e-mail."@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:8cf391ac-06aa-4919-b477-4aa7166aef36" .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://purl.org/dc/terms/title> "Mijn Activa werkkaart "@nl .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/citizen/nl/static/applics/working_card/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/description> "Ontvang de offici\u00EBle documenten van de sociale zekerheidsinstellingen. "@nl .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:74fceea3-279d-4796-b93e-141c6e238b6a" .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://purl.org/dc/terms/title> "Mijn &quot;eBox&quot; van de sociale zekerheid"@nl .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/HEAL#id> .
+<https://www.socialsecurity.be/citizen/nl/static/infos/ebox/transit.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/description> "Raadpleeg uw werkloosheidsdossier online."@nl .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/identifier> "urn:uuid:d0c89877-2668-40ab-bcca-cda69e1e54d7" .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://purl.org/dc/terms/title> "Mijn werkloosheidsdossier"@nl .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/be-theme/WORK#id> .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/be-theme/WORK#id> .
+<https://www.socialsecurity.be/nl/citizen/static/applics/dossier_Chomage/index.htm> <http://www.w3.org/ns/dcat#source> <https://my.belgium.be/> .
+<https://dc.digital.belgium.be/forms/show/liege/weapon?lng=en> <http://www.w3.org/2000/01/rdf-schema#label> "Besitzerlaubnis f\u00FCr feuerwaffen"@de .
+<https://dc.digital.belgium.be/forms/show/liege/weapon?lng=en> <http://www.w3.org/2000/01/rdf-schema#label> "Autorisation de d\u00E9tention d'arme \u00E0 feu"@fr .
+<https://dc.digital.belgium.be/forms/show/liege/weapon?lng=en> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/JUST> .
