@@ -28,73 +28,41 @@ package be.belgif.link;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.dropwizard.Configuration;
-import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  *
  * @author Bart.Hanssens
  */
 public class AppConfig extends Configuration {
-
-	@NotEmpty
-	private String dataDir;
-
-	@NotEmpty
-	private String luceneDir;
-
-	@NotEmpty
+	// front-end user/pass
 	private String username;
-
-	@NotEmpty
 	private String password;
 	
-	@NotEmpty
-	private String importDir;
+	private String store;
+	private String storeName;
+	// RDF repo user/pass
+	private String storeUsername;
+	private String storePassword;
 	
-	@NotEmpty
-	private String exportDir;
+
+	@JsonProperty
+	public String getStore() {
+		return store;
+	}
+	@JsonProperty
+	public void setStore(String store) {
+		this.store = store ;
+	}
 	
-
 	@JsonProperty
-	public String getDataDir() {
-		return dataDir;
+	public String getStoreName() {
+		return storeName;
 	}
-
 	@JsonProperty
-	public void setDataDir(String dataDir) {
-		this.dataDir = dataDir;
+	public void setStorename(String storeName) {
+		this.storeName = storeName ;
 	}
-
-	@JsonProperty
-	public String getLuceneDir() {
-		return luceneDir;
-	}
-
-	@JsonProperty
-	public void setLuceneDir(String luceneDir) {
-		this.luceneDir = luceneDir;
-	}
-
-	@JsonProperty
-	public String getImportDir() {
-		return importDir;
-	}
-
-	@JsonProperty
-	public void setImportDir(String importDir) {
-		this.importDir = importDir;
-	}
-
-	@JsonProperty
-	public String getExportDir() {
-		return exportDir;
-	}
-
-	@JsonProperty
-	public void setExportDir(String exportDir) {
-		this.exportDir = exportDir;
-	}
-
+	
 	@JsonProperty
 	public String getUsername() {
 		return username;
@@ -113,5 +81,25 @@ public class AppConfig extends Configuration {
 	@JsonProperty
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	@JsonProperty
+	public String getStoreUsername() {
+		return storeUsername;
+	}
+
+	@JsonProperty
+	public void setStoreUsername(String username) {
+		this.storeUsername = username;
+	}
+
+	@JsonProperty
+	public String getStorePassword() {
+		return storePassword;
+	}
+
+	@JsonProperty
+	public void setStorePassword(String password) {
+		this.storePassword = password;
 	}
 }

@@ -37,6 +37,7 @@ import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
 
 import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.Resource;
 import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.impl.LinkedHashModel;
@@ -59,9 +60,6 @@ import org.eclipse.rdf4j.query.QueryResults;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.RepositoryException;
-import org.eclipse.rdf4j.repository.sail.SailRepository;
-import org.eclipse.rdf4j.sail.Sail;
-import org.eclipse.rdf4j.sail.lucene.LuceneSail;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -77,18 +75,20 @@ public class QueryHelper {
 	private final static ValueFactory F = SimpleValueFactory.getInstance();
 
 	private final static String Q_FTS
-			= "PREFIX search: <http://www.openrdf.org/contrib/lucenesail#> " + "\n"
+			= "PREFIX luc: <http://www.ontotext.com/owlim/lucene#> " + "\n"
 			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " + "\n"
 			+ "PREFIX dcterms: <http://purl.org/dc/terms/> " + "\n"
-			+ "CONSTRUCT { ?s rdfs:label ?o } "
-			+ " WHERE { ?s search:matches [ search:query ?query ] . "
-			+ " ?s rdfs:label|dcterms:title ?o } ";
+			+ "PREFIX schema: <http://schema.org/> " + "\n"
+ 			+ "CONSTRUCT { ?s rdfs:label ?o } "
+			+ " WHERE { ?s luc:myIndex ?query . "
+			+ " ?s rdfs:label|dcterms:title|schema:name ?o } ";
 
 	private final static String Q_PROP
 			= "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " + "\n"
 			+ "PREFIX dcterms: <http://purl.org/dc/terms/> " + "\n"
+			+ "PREFIX schema: <http://schema.org/> " + "\n"
 			+ "CONSTRUCT { ?s rdfs:label ?o } "
-			+ " WHERE { ?s rdfs:label|dcterms:title ?o . "
+			+ " WHERE { ?s rdfs:label|dcterms:title|schema:name ?o . "
 			+ " ?s ?pred ?val } ";
 
 	/**
@@ -108,17 +108,7 @@ public class QueryHelper {
 	 * @return context URI
 	 */
 	public static IRI asGraph(String name) {
-		return F.createIRI(App.getGraphPrefix() + name);
-	}
-
-	/**
-	 * Get named graph / context id from name
-	 *
-	 * @param name
-	 * @return context URI
-	 */
-	public static IRI asDataset(String name) {
-		return F.createIRI(App.getPrefix() + "void#" + name);
+		return F.createIRI(name);
 	}
 
 	/**
@@ -144,6 +134,7 @@ public class QueryHelper {
 			m.setNamespace(OWL.PREFIX, OWL.NAMESPACE);
 			m.setNamespace(RDF.PREFIX, RDF.NAMESPACE);
 			m.setNamespace(RDFS.PREFIX, RDFS.NAMESPACE);
+			m.setNamespace("schema", "http://schema.org");
 			m.setNamespace(SKOS.PREFIX, SKOS.NAMESPACE);
 			m.setNamespace(VOID.PREFIX, VOID.NAMESPACE);
 			m.setNamespace(XMLSchema.PREFIX, XMLSchema.NAMESPACE);
@@ -152,36 +143,19 @@ public class QueryHelper {
 	}
 
 	/**
-	 * Reindex Lucene Sail
-	 *
-	 * @param repo
-	 */
-	public static void reIndex(Repository repo) {
-		Sail sail = ((SailRepository) repo).getSail();
-		if (sail instanceof LuceneSail) {
-			LOG.info("Reindexing lucene sail");
-			try {
-				((LuceneSail) sail).reindex();
-			} catch (Exception ex) {
-				throw new WebApplicationException(ex);
-			}
-			LOG.info("Done");
-		}
-	}
-
-	/**
 	 * Get all triples by subject
 	 *
 	 * @param repo RDF store
 	 * @param subj subject IRI or null
+	 * @param graph graph IRI or null
 	 *
 	 * @return all triples
 	 */
-	public static Model getBySubj(Repository repo, IRI subj) {
+	public static Model get(Repository repo, IRI subj, Resource graph) {
 		Model m = new LinkedHashModel();
 
 		try (RepositoryConnection conn = repo.getConnection()) {
-			Iterations.addAll(conn.getStatements(subj, null, null), m);
+			Iterations.addAll(conn.getStatements(subj, null, null, graph), m);
 		} catch (RepositoryException e) {
 			throw new WebApplicationException(e);
 		}
@@ -243,7 +217,7 @@ public class QueryHelper {
 	 * @param repo RDF store
 	 * @param m triples
 	 */
-	public static void putStatements(Repository repo, Model m) {
+	public static void add(Repository repo, Model m) {
 		try (RepositoryConnection conn = repo.getConnection()) {
 			conn.add(m);
 		} catch (RepositoryException e) {
@@ -257,9 +231,9 @@ public class QueryHelper {
 	 * @param repo RDF store
 	 * @param url subject to delete
 	 */
-	public static void deleteStatements(Repository repo, String url) {
+	public static void delete(Repository repo, IRI url, Resource graph) {
 		try (RepositoryConnection conn = repo.getConnection()) {
-			conn.remove(F.createIRI(url), null, null);
+			conn.remove(url, null, null, graph);
 		} catch (RepositoryException e) {
 			throw new WebApplicationException(e);
 		}

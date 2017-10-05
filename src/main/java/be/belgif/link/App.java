@@ -31,12 +31,8 @@ import be.belgif.link.health.RdfStoreHealthCheck;
 import be.belgif.link.helpers.ManagedRepository;
 import be.belgif.link.helpers.RDFMessageBodyReader;
 import be.belgif.link.helpers.RDFMessageBodyWriter;
-import be.belgif.link.resources.LdfResource;
+
 import be.belgif.link.resources.LinkResource;
-import be.belgif.link.resources.ReindexResource;
-import be.belgif.link.tasks.LuceneReindexTask;
-import be.belgif.link.tasks.RDFExportTask;
-import be.belgif.link.tasks.RDFImportTask;
 
 import io.dropwizard.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
@@ -46,9 +42,8 @@ import io.dropwizard.setup.Environment;
 import java.io.File;
 
 import org.eclipse.rdf4j.repository.Repository;
-import org.eclipse.rdf4j.repository.sail.SailRepository;
-import org.eclipse.rdf4j.sail.lucene.LuceneSail;
-import org.eclipse.rdf4j.sail.nativerdf.NativeStore;
+import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
+import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 
 /**
@@ -57,8 +52,8 @@ import org.eclipse.rdf4j.sail.nativerdf.NativeStore;
  * @author Bart.Hanssens
  */
 public class App extends Application<AppConfig> {
-	private final static String PREFIX = "http://link.belgif.be/";
-	private final static String PREFIX_GRAPH = "http://link.belgif.be/graph/";
+	private final static String PREFIX = "http://id.belgium.be/link/";
+	private final static String PREFIX_GRAPH = "http://id.belgium.be/graph/link/";
 
 	/**
 	 * Get base URI
@@ -81,20 +76,16 @@ public class App extends Application<AppConfig> {
 	/**
 	 * Configure a triple store repository
 	 * 
-	 * @param config configuration object
+	 * @param cfg configuration object
 	 * @return repository 
 	 */
-	private Repository configRepo(AppConfig config) {
-		// native disk-based store
-		File dataDir = new File(config.getDataDir());
-		NativeStore store = new NativeStore(dataDir);
-		
-		// full text search
-		LuceneSail fts = new LuceneSail();
-		fts.setParameter(LuceneSail.LUCENE_DIR_KEY, config.getLuceneDir());
-		fts.setBaseSail(store);
-		
-		return new SailRepository(fts);
+	private Repository configRepo(AppConfig cfg) {
+		RemoteRepositoryManager mgr = new RemoteRepositoryManager(cfg.getStore());
+		if (cfg.getStoreUsername() != null && !cfg.getUsername().isEmpty()) {
+			mgr.setUsernameAndPassword(cfg.getStoreUsername(), cfg.getStorePassword());
+		}
+		mgr.initialize();
+		return mgr.getRepository(cfg.getStoreName());
 	}
 
 	@Override
@@ -123,14 +114,7 @@ public class App extends Application<AppConfig> {
 		
 		// Resources / "web pages"
 		env.jersey().register(new LinkResource(repo));
-		env.jersey().register(new LdfResource(repo));
-		env.jersey().register(new ReindexResource(repo));	
 
-		// Tasks
-		env.admin().addTask(new LuceneReindexTask(repo));
-		env.admin().addTask(new RDFImportTask(repo, config.getImportDir()));
-		env.admin().addTask(new RDFExportTask(repo, config.getExportDir()));
-		
 		// Monitoring
 		RdfStoreHealthCheck check = new RdfStoreHealthCheck(repo);
 		env.healthChecks().register("triplestore", check);

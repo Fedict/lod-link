@@ -25,7 +25,6 @@
  */
 package be.belgif.link.helpers;
 
-import be.belgif.link.ldf.Hydra;
 import com.google.common.net.HttpHeaders;
 
 import java.io.IOException;
@@ -79,9 +78,6 @@ public class RDFMessageBodyWriter implements MessageBodyWriter<Model> {
 		RDFFormat fmt = RDFMediaType.getRDFFormat(mt);
 
 		try {
-			if (m.contains(null, Hydra.MAPPING, null)) {
-				headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "*");
-			}
 			Rio.write(m, out, fmt);
 		} catch (RDFHandlerException ex) {
 			throw new WebApplicationException(ex);
