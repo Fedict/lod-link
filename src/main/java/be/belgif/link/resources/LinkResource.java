@@ -61,29 +61,22 @@ public class LinkResource  {
 	 * Get all triples for a subject
 	 * 
 	 * @param url URI of the subject or null
+	 * @param subj URI of the subject or null, alias for url
 	 * @param graph graph of the subject or null
 	 * @return HTTP OK
 	 */
 	@GET
-	public Model getById(@QueryParam("s") String url, @QueryParam("g") String graph) {	
+	public Model getById(@QueryParam("url") String url, 
+			@QueryParam("s") String subj, @QueryParam("g") String graph) {	
 		if (graph != null && !graph.isEmpty()) {
 			return QueryHelper.get(repo, null, QueryHelper.asURI(graph));
 		}
-		if (url != null && !url.isEmpty()) {
-			return QueryHelper.get(repo, QueryHelper.asURI(url), null);
+		// alias for backwards compatibility
+		String u = (url != null) ? url : subj;
+		if (u != null && !u.isEmpty()) {
+			return QueryHelper.get(repo, QueryHelper.asURI(u), null);
 		}
 		return null;
-	}
-	
-	/**
-	 * Alias for getting triples
-	 * 
-	 * @param url
-	 * @return 
-	 */
-	@GET
-	public Model getByUrl(@QueryParam("url") String url) {
-		return getById(url, null);
 	}
 	
 	/**
@@ -104,36 +97,27 @@ public class LinkResource  {
 	/**
 	 * Delete all statements for a given subject or graph
 	 * 
-	 * @param url subject URI or null
+	 * @param url URI of the subject or null
+	 * @param subj URI of the subject or null, alias for url
 	 * @param graph graph URI or null
 	 * @return HTTP OK when done
 	 */
 	@PermitAll
 	@DELETE
 	@ExceptionMetered
-	public Response delete(@QueryParam("s") String url, @QueryParam("g") String graph) {
+	public Response delete(@QueryParam("url") String url,
+			@QueryParam("s") String subj, @QueryParam("g") String graph) {
 		if (graph != null && !graph.isEmpty()) {
 			QueryHelper.delete(repo, null, QueryHelper.asURI(graph));
 		}
+		// alias for backwards compatibility
+		String u = (url != null) ? url : subj;
 		if (url != null && !url.isEmpty()) {
-			QueryHelper.delete(repo, QueryHelper.asURI(url), null);
+			QueryHelper.delete(repo, QueryHelper.asURI(u), null);
 		}
 		return Response.ok().build();
 	}
 
-	/**
-	 * Alias for deleting triples
-	 * 
-	 * @param url
-	 * @return 
-	 */
-	@PermitAll
-	@DELETE
-	@ExceptionMetered
-	public Response deleteUrl(@QueryParam("url") String url) {
-		return delete(url, null);
-	}
-	
 	/**
 	 * Full text search
 	 * 
