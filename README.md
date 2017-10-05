@@ -42,6 +42,7 @@ For PUT requests, the HTTP `Content-Type` header must be set, and UTF-8 encoding
 
 ```
 http://link.belgif.be/link?url=http://www.fedict.be
+https://id.belgium.be/link-lod/link?url=http://www.fedict.be
 ```
 Note: the value of the `url` parameter should be URL-encoded.
 
@@ -49,11 +50,13 @@ Note: the value of the `url` parameter should be URL-encoded.
 
 ```
 http://link.belgif.be/link/_filter?theme=http://publications.europa.eu/resource/authority/data-theme/TECH (all technology-related links)
+https://id.belgium.be/link-lod/link/_filter?theme=http://publications.europa.eu/resource/authority/data-theme/TECH
 ```
 
 Note again that, especially when the ID contains a '#' (which is not passed to the server), URL-encoding might be necessary.
 ```
 http://link.belgif.be/link/_filter?theme=http://vocab.belgif.be/be-theme/WORK%23id
+https://id.belgium.be/link-lod/link/_filter?theme=http://vocab.belgif.be/be-theme/WORK%23id
 ```
 
 ## Adding information about a link (PUT)
